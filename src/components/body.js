@@ -12,7 +12,7 @@ import {Home, Projects, Contact} from '../views/'
 import HomeIcon from './homeicon'
 import ProjectsIcon from './projectsicon'
 import ContactIcon from './contacticon'
-import { BrowserRouter as Router, Route} from "react-router-dom"
+import { BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom"
 
 
 const useStyles = makeStyles({
@@ -57,13 +57,16 @@ export default function Body(props){
 
               <ContactIcon fontSize='large' color='secondary'/>
 
-              <Route path="*/" exact component={Home} />
-              <Route path="*/projects/" component={Projects} />
-              <Route path="*/contact/" component={Contact} />
-
+              <Switch>
+                <Route path="/" exact component={Home} />
+                <Route path="/projects/" component={Projects} />
+                <Route path="/contact/" component={Contact} />
+                <Route render={() => <Redirect to="/" />} />
+              </Switch>
+              
               <Divider />
               <Box className={classes.footer} textAlign='center' fontWeight={200} fontSize={18}>
-                  Copyright © {new Date().getFullYear()} Fabio Pineda. <br/> All rights reserved.
+                  Copyright © {new Date().getFullYear()+1} Fabio Pineda. <br/> All rights reserved.
               </Box>
             </Paper>
           </Grid>
