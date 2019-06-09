@@ -57,9 +57,9 @@ export default function Body(props){
 
               <ContactIcon fontSize='large' color='secondary'/>
 
-              <Route path="/" exact component={Home} />
-              <Route path="/projects/" component={Projects} />
-              <Route path="/contact/" component={Contact} />
+              <Route path="*/" exact component={Home} />
+              <Route path="*/projects/" component={Projects} />
+              <Route path="*/contact/" component={Contact} />
 
               <Divider />
               <Box className={classes.footer} textAlign='center' fontWeight={200} fontSize={18}>
