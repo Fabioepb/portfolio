@@ -7,6 +7,7 @@ import {makeStyles} from '@material-ui/styles';
 import SvgIcon from '@material-ui/core/SvgIcon'
 import Zoom from '@material-ui/core/Zoom'
 import useAnimation from '../hooks/useanimation'
+import { useTranslation } from 'react-i18next';
 
 const useStyle = makeStyles({
   container:{
@@ -29,11 +30,12 @@ const useStyle = makeStyles({
 export default function Contact() {
   let classes = useStyle()
   let checked = useAnimation()
+  const { t} = useTranslation();
   return (
     <Zoom in={checked}>
     <Typography component='div'>
       <Box textalign='center' fontWeight={600} fontSize={32}>
-        Contact me
+        {t("contactMe")}
       </Box>
       <Divider variant='middle'/>
       <Grid container direction='row' className={classes.container} justify='center'>

@@ -13,8 +13,8 @@ import HomeIcon from './homeicon'
 import ProjectsIcon from './projectsicon'
 import ContactIcon from './contacticon'
 import { BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom"
-
-
+import { useTranslation } from 'react-i18next';
+import LanguageButton from '../components/languageButton'
 const useStyles = makeStyles({
     bodyContainer:{
         height: '100%',
@@ -33,10 +33,11 @@ const useStyles = makeStyles({
 
 export default function Body(props){
     let classes = useStyles()
-
+    const { t} = useTranslation();
     return(
       <Router>
       <Container>
+        <LanguageButton></LanguageButton>
         <CssBaseline/>
         <Grid container direction='column' justify='center' alignItems='center'>
           <AvatarPic />
@@ -47,7 +48,7 @@ export default function Body(props){
                   Fabio Pineda
                 </Box>
                 <Box textAlign='center' fontWeight={500} fontSize={24}>
-                  Computer Engineer & Software Developer
+                  {t("jobTitle")}
                 </Box>
                 <Divider/>
               </Typography>

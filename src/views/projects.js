@@ -12,14 +12,7 @@ import luxlogo from '../static/luxury.jpg'
 import Zoom from '@material-ui/core/Zoom'
 import useAnimation from '../hooks/useanimation'
 import {makeStyles} from '@material-ui/styles'
-
-const luxuryTech= `I was brought in to work as a full stack developer to try and finish the project which had suffered from development problems.\n\n I was in charge of: \n \n* The migration from Bootstrap 3.3.7 to Bootstrap 4.3\n* Doing a minor rework of the whole UI\n* Making the client Mobile responsive\n* Making sure the API was robust and secure.\n* Bug testing the API and client`
-const snapitTech = `The tech used in the front end was:\n*React Native\n*Redux for state management\n*Redux thunk for async operations\n and for the back end: \n*NodeJs - ExpressJs\n*MongoDB\n*Multer`
-const shoppingTech = `The stack used in the frontend was: \n*Reactjs\n*Material-ui\n and for the backend:\n*NodeJs - ExpressJs\n*Postgresql`
-const tripleteTech = `The stack used in the frontend was:\n*Jquery\n*Bootstrap 4\nand for the backend: \n*NodeJs - ExpressJs\n*Postgresql`
-const reactiveTech = `The stack used in the frontend was: \n*React Native\n*Redux\n and we used the native Storage to store information.\n No backend was used.`
-const whiteboardTech= `The stack used in the frontend was: \n*Bootrstrap 3\n*Socket-io\n and for the backend:\n*Java Servlets.\n no Database was used.`
-const movieTech= `The stack used in the frontend was:\n*Ionic 3\n and for the backend we used the IMDB API to fetch movie data.`
+import { useTranslation } from 'react-i18next';
 
 let useStyles = makeStyles({
   container:{
@@ -32,83 +25,83 @@ let useStyles = makeStyles({
 export default function Projects() {
   let checked = useAnimation()
   let classes = useStyles()
-
+  const {t} = useTranslation();
   return (
     <Zoom in={checked}>
     <Typography component='div'>
     <Box textalign='center' fontWeight={600} fontSize={32}>
-      Work Projects
+      {t("workProjects")}
     </Box>
     <Divider variant='middle'/>
       <Grid container justify='center' className={classes.container}>
         <Grid item>
           <ProjectCard 
           title='Luxury Mining'
-          description='Express Web Application for a cloud mining service.'
+          description="luxTitle"
           released={true}
           website='https://luxurymining.herokuapp.com/'
-          tech={luxuryTech}
+          tech="luxTech"
           src={luxlogo}
         />
         </Grid>
       </Grid>
     <Box textalign='center' fontWeight={600} fontSize={32}>
-      Course Projects
+      {t("courseProjects")}
     </Box>
     <Divider variant='middle'/>
       <Grid container justify='center' className={classes.container}>
         <Grid item>
           <ProjectCard 
           title='SnapIt'
-          description='Instagram copyWork - A social media network that lets you share pictures and comment on them'
+          description='snapTitle'
           link='https://github.com/Fabioepb/snapit'
-          tech={snapitTech}
+          tech="snapTech"
           src={snapit}
         />
         </Grid>
         <Grid item>
           <ProjectCard 
           title='ReactivePad'
-          description='A mobile app that lets you write notes or draw, and save them'
+          description='reactiveTitle'
           link='https://github.com/Fabioepb/reactive-pad'
-          tech={reactiveTech}
+          tech="reactiveTech"
           src={reactlogo}
         />
         </Grid>
         <Grid item>
           <ProjectCard 
           title='ShoppingCart'
-          description='Amazon Copywork-An E-commerce web App, that lets you put things into your cart and go to checkout'
+          description='shoppingTitle'
           link='https://github.com/Fabioepb/Shopping-CartSV'
-          tech={shoppingTech}
+          tech="shoppingTech"
           src={reactlogo}
         />
         </Grid>
         <Grid item>
         <ProjectCard 
           title='Triplete'
-          description='A betting web app where you bet on soccer matches'
+          description='tripleteTitle'
           link='https://github.com/Fabioepb/Triplete-server'
-          tech={tripleteTech}
+          tech="tripleteTech"
           src={Bootstrap}
         />
         </Grid>
         <Grid item>
           <ProjectCard 
           title='Shared Whiteboard'
-          description='A web app that lets you and your friends draw online'
+          description='whiteboardTitle'
           link='https://github.com/Jnlbr/shared-whiteboard'
-          tech={whiteboardTech}
+          tech="whiteboardTech"
           src={Bootstrap}
         />
         </Grid>
         <Grid item>
           <ProjectCard 
           title='MovieStar'
-          description='A mobile app containing information on all your favorite movies'
+          description="movieTitle"
           link='https://github.com/Fabioepb/MovieStar'
           src={ionic}
-          tech={movieTech}
+          tech="movieTech"
         />
         </Grid>
       </Grid>

@@ -7,7 +7,7 @@ const useStyles = makeStyles({
     avatar:{
         height: 160,
         width: 150,
-        border: '3px dotted #f50057',
+        border: '3px solid #f50057',
         position: 'absolute',
         top:25,
         boxShadow: '2px 2px 15px -2px rgba(0,0,0,0.75)',   

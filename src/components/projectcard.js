@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
@@ -12,6 +12,7 @@ import red from '@material-ui/core/colors/red';
 import SvgIcon from '@material-ui/core/SvgIcon';
 import Divider from '@material-ui/core/Divider'
 import earth from '../static/earth.svg'
+import { useTranslation } from 'react-i18next';
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -41,7 +42,7 @@ const useStyles = makeStyles(theme => ({
   },
   paragraphs:{
     margin: '0',
-    textAlign: 'justify',
+    textAlign: 'left',
     fontWeight: '500',
     lineHeight: 'initial'
   }
@@ -50,13 +51,8 @@ const useStyles = makeStyles(theme => ({
 export default function ProjectCard(props) {
   const classes = useStyles();
   const [expanded, setExpanded] = useState(false);
-  const [tech, setTech] = useState([])
-
-  useEffect(() => {
-    let paragraphs = props.tech.split('\n').map((el,index)=>(<div className={classes.paragraphs} key={index}>{el}</div>))
-    setTech([paragraphs])
-  }, [props.tech, classes.paragraphs])
-
+  const { t } = useTranslation();
+  
   function handleExpandClick() {
     setExpanded(!expanded);
   }
@@ -74,7 +70,7 @@ export default function ProjectCard(props) {
           {props.title}
         </Typography>
         <Typography variant="body2" component="p" fontWeight={200} className={classes.description}>
-          {props.description}
+          {t(props.description)}
         </Typography>
       </CardContent>
       <Divider/>
@@ -107,8 +103,8 @@ export default function ProjectCard(props) {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
           <Divider variant='middle'/>
         <CardContent>
-          <Typography component='div'>
-            {tech}
+          <Typography component='div' style={{whiteSpace: "pre-wrap", textAlign: 'left'}}>
+            {t(props.tech)}
           </Typography>
         </CardContent>
       </Collapse>

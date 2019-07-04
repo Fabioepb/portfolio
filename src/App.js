@@ -9,6 +9,7 @@ import Box from '@material-ui/core/Box'
 import logo from './static/logo.svg'
 import Responsive from './static/responsive.png'
 import DevNote from './components/devnote'
+import { useTranslation } from 'react-i18next';
 
 const useStyles = makeStyles({
   container:{
@@ -30,7 +31,7 @@ const useStyles = makeStyles({
 function App() {
   let classes = useStyles()
   let width = useWidth()
-
+  const { t} = useTranslation();
   return (
     <div className="App">
       <CssBaseline/>
@@ -40,7 +41,7 @@ function App() {
             <Sidebar>
               <DevNote>
                   <Box fontWeight={500} className={classes.notesText}>
-                    This portfolio was developed using <b>ReactJS 16.8.6</b>, with it's latest feature:
+                    {t('note1')}
                   </Box>
                   <Box fontWeight={600}>
                     Hooks!
@@ -59,7 +60,7 @@ function App() {
             <Sidebar>
               <DevNote >
                 <Box fontWeight={500} className={classes.notesText}>
-                  This portfolio is mobile friendly, you can try it out on your phone or tablet.. <br /> it also works offline and it can act as an app in your phone, as it is a Progressive Web App.
+                  {t('note2')}
                 </Box>
                 <img src={Responsive} height={75} alt="logo" />
               </DevNote>
