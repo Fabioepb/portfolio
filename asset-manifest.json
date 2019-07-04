@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.6953d095.chunk.css",
+    "main.css": "/static/css/main.32b75b6e.chunk.css",
     "main.js": "/static/js/main.8043c3dd.chunk.js",
     "main.js.map": "/static/js/main.8043c3dd.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
@@ -8,9 +8,9 @@
     "static/js/2.ae08a211.chunk.js": "/static/js/2.ae08a211.chunk.js",
     "static/js/2.ae08a211.chunk.js.map": "/static/js/2.ae08a211.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.7c4e3b54c3076938209ed4d22a1656d8.js": "/precache-manifest.7c4e3b54c3076938209ed4d22a1656d8.js",
+    "precache-manifest.5f923df25a95ccbada9b117a61d6dad5.js": "/precache-manifest.5f923df25a95ccbada9b117a61d6dad5.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.6953d095.chunk.css.map": "/static/css/main.6953d095.chunk.css.map",
+    "static/css/main.32b75b6e.chunk.css.map": "/static/css/main.32b75b6e.chunk.css.map",
     "static/media/Fotocara2.jpg": "/static/media/Fotocara2.7f45bd2f.jpg",
     "static/media/HTML5+CSS3.png": "/static/media/HTML5+CSS3.6be059f4.png",
     "static/media/App.css": "/static/media/background2.86ce70c2.jpg",
