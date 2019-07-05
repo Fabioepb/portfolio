@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "30d54162d15ff3762777bc954852d6b9",
+    "revision": "afbd46ca3d5313b0b204ef749f381ad5",
     "url": "/index.html"
   },
   {
-    "revision": "bfeb9163b6fd4ef66cc0",
-    "url": "/static/css/main.dc3c2e1c.chunk.css"
+    "revision": "b14ed39e4691651b5868",
+    "url": "/static/css/main.267a939b.chunk.css"
   },
   {
     "revision": "705214d2e56f3a0cf64b",
     "url": "/static/js/2.ae08a211.chunk.js"
   },
   {
-    "revision": "bfeb9163b6fd4ef66cc0",
-    "url": "/static/js/main.8043c3dd.chunk.js"
+    "revision": "b14ed39e4691651b5868",
+    "url": "/static/js/main.58e11423.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "7f45bd2f22eb4640fcf7ec6f8d422273",
-    "url": "/static/media/Fotocara2.7f45bd2f.jpg"
+    "revision": "53b003255f00240b7d29cd271d2d530c",
+    "url": "/static/media/Fotocara2.53b00325.jpg"
   },
   {
     "revision": "6be059f42889a09c867ce141dc0c7e09",
     "url": "/static/media/HTML5+CSS3.6be059f4.png"
   },
   {
-    "revision": "86ce70c29e05515effc4c2e40458f7ea",
-    "url": "/static/media/background2.86ce70c2.jpg"
+    "revision": "7257f537820adcbf9102ae1ac5bbcd9d",
+    "url": "/static/media/background2.7257f537.jpg"
   },
   {
     "revision": "54bb0431a1a5c48e26bba5c4b6173d6d",
