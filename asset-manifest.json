@@ -1,24 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.fad18d86.chunk.css",
-    "main.js": "/static/js/main.58e11423.chunk.js",
-    "main.js.map": "/static/js/main.58e11423.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.ae08a211.chunk.js": "/static/js/2.ae08a211.chunk.js",
-    "static/js/2.ae08a211.chunk.js.map": "/static/js/2.ae08a211.chunk.js.map",
+    "main.css": "/static/css/main.0917a291.chunk.css",
+    "main.js": "/static/js/main.483cfe49.chunk.js",
+    "main.js.map": "/static/js/main.483cfe49.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c70048c8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c70048c8.js.map",
+    "static/js/2.fa4bb4a9.chunk.js": "/static/js/2.fa4bb4a9.chunk.js",
+    "static/js/2.fa4bb4a9.chunk.js.map": "/static/js/2.fa4bb4a9.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.cd4b43b417b06265114e6e6e6a27ddb6.js": "/precache-manifest.cd4b43b417b06265114e6e6e6a27ddb6.js",
+    "precache-manifest.a766e4b9b86b2582b4de8b33b952ffce.js": "/precache-manifest.a766e4b9b86b2582b4de8b33b952ffce.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.fad18d86.chunk.css.map": "/static/css/main.fad18d86.chunk.css.map",
-    "static/media/Fotocara2.jpg": "/static/media/Fotocara2.53b00325.jpg",
-    "static/media/HTML5+CSS3.png": "/static/media/HTML5+CSS3.6be059f4.png",
-    "static/media/App.css": "/static/media/background2.7257f537.jpg",
-    "static/media/bootstrap.png": "/static/media/bootstrap.54bb0431.png",
-    "static/media/earth.svg": "/static/media/earth.b2e9f934.svg",
-    "static/media/logo.svg": "/static/media/logo.ee7cd8ed.svg",
-    "static/media/luxury.jpg": "/static/media/luxury.f8b4f46b.jpg",
-    "static/media/mongodb.jpg": "/static/media/mongodb.9345df65.jpg",
-    "static/media/react.png": "/static/media/react.a22f162f.png"
-  }
+    "static/css/main.0917a291.chunk.css.map": "/static/css/main.0917a291.chunk.css.map",
+    "static/js/2.fa4bb4a9.chunk.js.LICENSE.txt": "/static/js/2.fa4bb4a9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c70048c8.js",
+    "static/js/2.fa4bb4a9.chunk.js",
+    "static/css/main.0917a291.chunk.css",
+    "static/js/main.483cfe49.chunk.js"
+  ]
 }
