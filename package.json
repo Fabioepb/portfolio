@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fabioepb.github.io/portfolio",
+  "homepage": "https://fabiopineda.ml",
   "dependencies": {
     "@material-ui/core": "^4.0.0-beta.2",
     "gh-pages": "^2.0.1",
@@ -11,7 +11,7 @@
     "react-dom": "^16.8.6",
     "react-i18next": "^10.11.4",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.1"
+    "react-scripts": "^3.4.0"
   },
   "scripts": {
     "predeploy": "yarn run build",
