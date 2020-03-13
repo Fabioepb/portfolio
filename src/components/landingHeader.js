@@ -87,6 +87,14 @@ const LandingHeader = (props) => {
     const classes = useStyles()
     const { t } = useTranslation();
 
+    const handleClick = (event,target) => {
+        const anchor = (event.target.ownerDocument || document).querySelector(`#${target}`);
+
+        if (anchor) {
+            anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    };
+
     return (
         <>
             <NavBar/>
@@ -103,7 +111,7 @@ const LandingHeader = (props) => {
                     {t("note1")}
                 </Box>
                 <Button variant="contained"  className={classes.contactButton}>
-                    <Box textAlign={"initial"} fontWeight={400} fontSize={24}>
+                    <Box textAlign={"initial"} fontWeight={400} fontSize={24} onClick={(e)=>handleClick(e,"contact")}>
                         {t("contactMe")}
                     </Box>    
                 </Button>
