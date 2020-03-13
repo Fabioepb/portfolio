@@ -44,7 +44,7 @@ const useStyles = makeStyles({
     },
     keystoneImg: {
         ["@media(max-width: 900px)"]: {
-            width: "400px"
+            width: "380px"
         },
         ["@media(max-width: 400px)"]: {
             width: "300px"

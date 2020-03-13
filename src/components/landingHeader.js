@@ -24,17 +24,17 @@ const useStyles = makeStyles({
         display: "flex",
         color: "white",
         fontSize: "46px",
-        ["@media(max-width: 800px)"]:{
+        ["@media(max-width: 800px)"]: {
             fontSize: "32px",
             marginLeft: 35,
             paddingTop: "25vh"
         },
-        ["@media(max-width: 500px)"]:{
-            flexDirection:"column",
-            textAlign:"center",
-            margin:0
+        ["@media(max-width: 500px)"]: {
+            flexDirection: "column",
+            textAlign: "center",
+            margin: 0
         },
-        ["@media(min-width: 2000px)"]:{
+        ["@media(min-width: 2000px)"]: {
             fontSize: "80px",
             marginLeft: 35,
             paddingTop: "25vh"
@@ -43,40 +43,42 @@ const useStyles = makeStyles({
     secondaryText: {
         marginLeft: 100,
         color: "lightgray",
-        ["@media(max-width: 800px)"]:{
+        ["@media(max-width: 800px)"]: {
             fontSize: "28px",
             marginLeft: 50
         },
-        ["@media(max-width: 500px)"]:{
+        ["@media(max-width: 500px)"]: {
             fontSize: "22px",
-            textAlign:"center",
-            margin:0
+            textAlign: "center",
+            margin: 0
         }
     },
     name: {
         color: "#3e9def",
-        ["@media(max-width: 500px)"]:{
+        ["@media(max-width: 500px)"]: {
             fontSize: "32px",
 
         }
     },
-    contactText:{
-        paddingTop: "25vh",
+    contactText: {
         display: "flex",
-        justifyContent:"center",
+        justifyContent: "center",
         color: "white",
-        ["@media(max-width: 1000px)"]:{
+        ["@media(max-width: 1000px)"]: {
             fontSize: "28px"
         },
-        ["@media(max-width: 500px)"]:{
+        ["@media(max-width: 500px)"]: {
             fontSize: "26px"
         }
     },
-    contactButton:{
+    contactButton: {
         backgroundColor: "#3e9def",
-        color:"white",
+        color: "white",
         borderColor: "3px solid black",
         marginTop: 25
+    },
+    contactDiv:{
+        marginTop:"19vh"
     }
 })
 
@@ -87,7 +89,7 @@ const LandingHeader = (props) => {
     const classes = useStyles()
     const { t } = useTranslation();
 
-    const handleClick = (event,target) => {
+    const handleClick = (event, target) => {
         const anchor = (event.target.ownerDocument || document).querySelector(`#${target}`);
 
         if (anchor) {
@@ -97,8 +99,8 @@ const LandingHeader = (props) => {
 
     return (
         <>
-            <NavBar/>
-                <div id="back-to-top-anchor" />
+            <NavBar />
+            <div id="back-to-top-anchor" />
             <Typography component='div' className={classes.landing}>
                 <Box textAlign={"initial"} fontWeight={700} fontSize={42} className={classes.mainText}>
                     {t("name")}
@@ -107,16 +109,18 @@ const LandingHeader = (props) => {
                 <Box textAlign={"initial"} fontWeight={400} fontSize={32} className={classes.secondaryText}>
                     {t("jobTitle")}
                 </Box>
-                <Box textAlign={"initial"} fontWeight={400} fontSize={34} className={classes.contactText}>
-                    {t("note1")}
-                </Box>
-                <Button variant="contained"  className={classes.contactButton}>
-                    <Box textAlign={"initial"} fontWeight={400} fontSize={24} onClick={(e)=>handleClick(e,"contact")}>
-                        {t("contactMe")}
-                    </Box>    
-                </Button>
+                <div className={classes.contactDiv}>
+                    <Box textAlign={"initial"} fontWeight={400} fontSize={34} className={classes.contactText}>
+                        {t("note1")}
+                    </Box>
+                    <Button variant="contained" className={classes.contactButton}>
+                        <Box textAlign={"initial"} fontWeight={400} fontSize={24} onClick={(e) => handleClick(e, "contact")}>
+                            {t("contactMe")}
+                        </Box>
+                    </Button>
+                </div>
             </Typography>
-            <ScrollButton/>
+            <ScrollButton />
         </>
     )
 }

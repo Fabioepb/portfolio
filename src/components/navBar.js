@@ -67,7 +67,7 @@ const NavBar = () => {
     const [scrolled, setScrolled] = useState(false);
 
     window.addEventListener('scroll', function (e) {
-        if (document.documentElement.scrollTop > window.innerHeight * 0.70) {
+        if ((document.documentElement.scrollTop || document.body.scrollTop)  > window.innerHeight * 0.70) {
             setScrolled(true)
         } else {
             setScrolled(false)
