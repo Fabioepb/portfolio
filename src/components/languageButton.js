@@ -4,7 +4,7 @@ import Fab from '@material-ui/core/Fab';
 
 const LanguageButton = () => {
   const { i18n } = useTranslation();
-  let [english, setEnglish] = useState(false)
+  let [english, setEnglish] = useState(true)
 
   let changeTongue = (english) => {
     if (english) {

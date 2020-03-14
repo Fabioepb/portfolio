@@ -66,7 +66,7 @@ i18n
       }
     }
   },
-    lng: "es",
+    lng: "en",
 
     keySeparator: false, // we do not use keys in form messages.welcome
 
