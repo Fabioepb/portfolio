@@ -12,8 +12,7 @@ const useStyles = makeStyles({
         padding: "1vw",
         color:"black",
         "&:hover":{
-            transition:"0.2s",
-            boxShadow: "inset 0px 0px 300px 1px rgba(62,156,239,1);",
+            background: "linear-gradient(180deg,rgb(60, 192, 239)  0%, rgb(59, 157, 239) 100%)",
             cursor:"pointer"
         }
     }

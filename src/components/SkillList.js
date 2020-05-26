@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles({
     skill: {
         padding: "5px",
-        marginTop: "25px",
+        marginTop: "50px",
         borderLeft: "2px solid #3e9def",
         // eslint-disable-next-line no-useless-computed-key
         ["@media(max-width: 500px)"]: {

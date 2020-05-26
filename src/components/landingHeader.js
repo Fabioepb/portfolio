@@ -111,8 +111,8 @@ const useStyles = makeStyles({
         }
     },
     landingImg: {
-        background: "rgba(0, 0, 0, .3) url('https://images.pexels.com/photos/459654/pexels-photo-459654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')",
-        backgroundBlendMode: "darken",
+        background: "rgb(50, 152, 218) url(https://images.pexels.com/photos/459654/pexels-photo-459654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
+        backgroundBlendMode: "multiply",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
