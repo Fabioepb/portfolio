@@ -10,7 +10,7 @@ const useStyles = makeStyles({
         paddingTop: "1vh",
         paddingBottom: "1vh",
         color: "white",
-        backgroundColor: "#3e9def",
+        background: "linear-gradient(180deg, rgba(62,157,239,1) 0%, rgba(0,163,255,1) 100%);",
         fontSize: "12px"
     },
     footerText: {

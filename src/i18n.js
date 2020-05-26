@@ -7,8 +7,12 @@ i18n
     resources: {
       en: {
       translation: {
-        "name":"Hi, my name is ",
-        "jobTitle": "Computer Engineer & Software Developer",
+        "salute":"Hi.",
+        "name": "My name is ",
+        "description1": "I'm a Computer Engineer and Software Developer, my area of focus is Web and Mobile development. Most of my projects are published on my",
+        "description2": "I consider myself a persistent guy, with a strange curiosity for the unknown that motivates me to learn and improve every day.",
+        "description3": "Outside of programming, I love to listen to podcasts and audiobooks, coffee, video games and I would love to learn how to paint.",
+        "onlyName": "Fabio Pineda",
         "skills": "Skills",
         "aboutMe":"About me",
         "contact":"Contact",
@@ -37,7 +41,12 @@ i18n
     }
     ,es:{
       translation: {
-        "name":"Hola, mi nombre es ",
+        "salute":"Hola.",
+        "name": "Mi nombre es ",
+        "description1": "Soy Ing. de Computacion y desarrollador de software, mi area de enfoque es el desarrollo Web y Movil. La mayoria de mis proyectos se encuentran alojados en mi",
+        "description2": "Me considero una persona perseverante, y con una curiosidad por lo desconocido que me motiva a aprender y ser mejor cada día.",
+        "description3": "nAdemás de mi carrera como desarollador, me encantan los podcasts, el café y algun día me gustaria aprender a pintar.",
+        "onlyName": "Fabio Pineda",
         "jobTitle": "Ing. de Computación y Desarrollador de Software",
         "skills":"Conocimientos",
         "aboutMe":"Acerca de mí", 

@@ -5,6 +5,7 @@
   "homepage": "https://fabiopineda.ml",
   "dependencies": {
     "@material-ui/core": "^4.0.0-beta.2",
+    "@material-ui/icons": "^4.9.1",
     "gh-pages": "^2.0.1",
     "i18next": "^17.0.6",
     "react": "^16.8.6",

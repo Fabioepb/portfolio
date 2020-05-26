@@ -16,12 +16,14 @@ const useStyles = makeStyles({
             color: "#3e9def",
             cursor: "pointer",
         },
-        // eslint-disable-next-line no-useless-computed-key
-        ["@media(max-width: 600px)"]: {
+        "@media(max-width: 600px)": {
             fontSize: "12px !important",
             paddingRight: "2px",
             borderRight: "1px solid #3e9def",
 
+        },
+        "@media(max-width: 1200px)": {
+            color:'black'
         }
     },
     scrollednavLink: {
@@ -33,8 +35,7 @@ const useStyles = makeStyles({
             color: "black",
             cursor: "pointer"
         },
-        // eslint-disable-next-line no-useless-computed-key
-        ["@media(max-width: 600px)"]: {
+        "@media(max-width: 600px)": {
             fontSize: "12px !important",
             paddingRight: "2px",
             borderRight: "1px solid white",
@@ -46,7 +47,7 @@ const useStyles = makeStyles({
     },
     scrolledNavbar: {
         transition: "0.3s",
-        backgroundColor: "#3e9def"
+        backgroundColor: "rgba(0,163,255,1)"
     },
     navDiv: {
         display: "flex",

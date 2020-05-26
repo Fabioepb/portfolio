@@ -3,6 +3,7 @@ import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Zoom from '@material-ui/core/Zoom';
 import { makeStyles } from '@material-ui/styles';
 import Fab from '@material-ui/core/Fab';
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 
 const useStyles = makeStyles({
     root:{
@@ -43,7 +44,7 @@ function ScrollTop(props) {
       return(
         <ScrollTop {...props}>
             <Fab  size="small" aria-label="scroll back to top">
-          <img src="https://cdn3.iconfinder.com/data/icons/arrows-85/24/Arrow-1-512.png" alt="arrow-up" width={24}/>
+          <KeyboardArrowUpIcon color='blue' />
         </Fab>
       </ScrollTop>
       )
