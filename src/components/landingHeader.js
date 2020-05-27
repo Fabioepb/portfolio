@@ -75,17 +75,18 @@ const useStyles = makeStyles({
         justifyContent: "center",
         textAlign: 'center',
         ["@media(max-width: 1000px)"]: {
-            fontSize: "28px"
+            fontSize: "23px"
         },
         ["@media(max-width: 500px)"]: {
-            fontSize: "26px"
+            fontSize: "22px"
         }
     },
     contactButton: {
         background: "linear-gradient(180deg, rgba(62,157,239,1) 0%, rgba(0,163,255,1) 45%, rgba(62,193,239,1) 100%)",
         color: "white",
         borderColor: "3px solid black",
-        marginTop: 25
+        marginTop: 10,
+        zIndex: 90,
     },
     myName: {
         fontSize: '2.2em',
@@ -119,14 +120,17 @@ const useStyles = makeStyles({
         backgroundAttachment: "fixed",
         width: '45vw',
         height: '97vh',
-        position: 'absolute',
-        top: 0,
-        right: 0,
         ["@media(max-width: 1200px)"]: {
-            top:'80vh',
-            height: '30vh',
-            width: '100vw'
-        },
+            width: '100vw',
+            height: '30vh'
+        }
+    },
+    mainDiv:{
+        display: 'flex',
+        flexDirection: 'row',
+        ["@media(max-width: 1200px)"]: {
+            flexDirection: 'column'
+        }
     }
 })
 
@@ -149,7 +153,7 @@ const LandingHeader = (props) => {
         <>
             <NavBar />
             <div id="back-to-top-anchor" />
-            <div>
+            <div className={classes.mainDiv}>
                 <Typography component='div' className={classes.landing}>
                     <Box textAlign={"initial"} component='p' fontWeight={700} className={classes.mainText}>
                         {t("salute")}
