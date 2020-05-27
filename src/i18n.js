@@ -45,7 +45,7 @@ i18n
         "name": "Mi nombre es ",
         "description1": "Soy Ing. de Computacion y desarrollador de software, mi area de enfoque es el desarrollo Web y Movil. La mayoria de mis proyectos se encuentran alojados en mi",
         "description2": "Me considero una persona perseverante, y con una curiosidad por lo desconocido que me motiva a aprender y ser mejor cada día.",
-        "description3": "nAdemás de mi carrera como desarollador, me encantan los podcasts, el café y algun día me gustaria aprender a pintar.",
+        "description3": "Además de mi carrera como desarollador, me encantan los podcasts, el café y algun día me gustaria aprender a pintar.",
         "onlyName": "Fabio Pineda",
         "jobTitle": "Ing. de Computación y Desarrollador de Software",
         "skills":"Conocimientos",
