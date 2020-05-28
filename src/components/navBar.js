@@ -13,7 +13,7 @@ const useStyles = makeStyles({
         paddingRight: "10px",
         "&:hover": {
             transition: "0.3s",
-            color: "#3e9def",
+            color: "black",
             cursor: "pointer",
         },
         "@media(max-width: 600px)": {
@@ -23,7 +23,9 @@ const useStyles = makeStyles({
 
         },
         "@media(max-width: 1200px)": {
-            color:'black'
+            backgroundImage: "linear-gradient(180deg, rgba(62,157,239,1) 0%, rgba(0,163,255,1) 45%, rgba(62,193,239,1) 100%);",
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent'
         }
     },
     scrollednavLink: {
