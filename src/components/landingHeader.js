@@ -13,7 +13,7 @@ const useStyles = makeStyles({
         height: '97vh',
         width: '60vw',
         padding: '1vh 10vw',
-        ["@media(max-width: 1200px)"]: {
+        ["@media(max-width: 1300px)"]: {
             padding: '25px',
             width: '100vw'
         },
@@ -29,7 +29,7 @@ const useStyles = makeStyles({
         fontSize: '4.5em',
         display: "flex",
         color: "black",
-        ["@media(max-width: 1200px)"]: {
+        ["@media(max-width: 1300px)"]: {
             paddingTop: "2vh",
             fontSize: '3.5em'
         },
@@ -43,7 +43,7 @@ const useStyles = makeStyles({
         color: "black",
         textAlign: "justify",
         fontSize: '24px',
-        ["@media(max-width: 1200px)"]: {
+        ["@media(max-width: 1300px)"]: {
             width: '90vw',
             fontSize: '20px'
         },
@@ -63,7 +63,7 @@ const useStyles = makeStyles({
         ["@media(max-width: 500px)"]: {
             fontSize: '20px'
         },
-        ["@media(max-width: 1200px)"]: {
+        ["@media(max-width: 1300px)"]: {
             fontSize: '24px'
         },
         ["@media(max-width: 380px)"]: {
@@ -94,7 +94,7 @@ const useStyles = makeStyles({
         ["@media(max-width: 500px)"]: {
             fontSize: '20px'
         },
-        ["@media(max-width: 1200px)"]: {
+        ["@media(max-width: 1300px)"]: {
             fontSize: '24px'
         },
         ["@media(max-width: 380px)"]: {
@@ -120,7 +120,7 @@ const useStyles = makeStyles({
         backgroundAttachment: "fixed",
         width: '45vw',
         height: '97vh',
-        ["@media(max-width: 1200px)"]: {
+        ["@media(max-width: 1300px)"]: {
             width: '100vw',
             height: '30vh'
         }
@@ -128,7 +128,7 @@ const useStyles = makeStyles({
     mainDiv:{
         display: 'flex',
         flexDirection: 'row',
-        ["@media(max-width: 1200px)"]: {
+        ["@media(max-width: 1300px)"]: {
             flexDirection: 'column'
         }
     }
