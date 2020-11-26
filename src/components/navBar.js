@@ -1,104 +1,136 @@
-import React, { useState } from "react"
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
+import React, { useState } from "react";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
 import LanguageButton from "./languageButton";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 import { makeStyles } from "@material-ui/core";
-import Typography from '@material-ui/core/Typography';
+import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles({
-    navLink: {
-        borderRight: "2px solid #3e9def",
-        marginRight: "10px",
-        paddingRight: "10px",
-        "&:hover": {
-            transition: "0.3s",
-            color: "black",
-            cursor: "pointer",
-        },
-        "@media(max-width: 600px)": {
-            fontSize: "12px !important",
-            paddingRight: "2px",
-            borderRight: "1px solid #3e9def",
-
-        },
-        "@media(max-width: 1200px)": {
-            backgroundImage: "linear-gradient(180deg, rgba(62,157,239,1) 0%, rgba(0,163,255,1) 45%, rgba(62,193,239,1) 100%);",
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent'
-        }
+  navLink: {
+    borderRight: "2px solid #3e9def",
+    marginRight: "10px",
+    paddingRight: "10px",
+    fontWeight: 700,
+    "&:hover": {
+      transition: "0.3s",
+      color: "black",
+      cursor: "pointer",
     },
-    scrollednavLink: {
-        borderRight: "2px solid white",
-        marginRight: "10px",
-        paddingRight: "10px",
-        "&:hover": {
-            transition: "0.3s",
-            color: "black",
-            cursor: "pointer"
-        },
-        "@media(max-width: 600px)": {
-            fontSize: "12px !important",
-            paddingRight: "2px",
-            borderRight: "1px solid white",
-
-        }
-    }, navBar: {
-        backgroundColor: "#3e9def00",
-        boxShadow: "none"
+    "@media(max-width: 600px)": {
+      fontSize: "14px !important",
+      paddingRight: "2px",
+      marginRight: 2,
+      borderRight: "1px solid #3e9def",
     },
-    scrolledNavbar: {
-        transition: "0.3s",
-        backgroundColor: "rgba(0,163,255,1)"
+    "@media(max-width: 1300px)": {
+      backgroundImage:
+        "linear-gradient(180deg, rgba(62,157,239,1) 0%, rgba(0,163,255,1) 45%, rgba(62,193,239,1) 100%);",
+      WebkitBackgroundClip: "text",
+      WebkitTextFillColor: "transparent",
     },
-    navDiv: {
-        display: "flex",
-        flexDirection: "row-reverse",
-        width: "50%",
-        marginLeft: "auto",
-        paddingRight: "2vw",
-        // eslint-disable-next-line no-useless-computed-key
-        ["@media(max-width: 600px)"]: {
-            paddingRight: "10vw"
-        }
+  },
+  scrollednavLink: {
+    borderRight: "2px solid white",
+    paddingRight: "5px",
+    marginRight: 5,
+    fontWeight: 700,
+    "&:hover": {
+      transition: "0.3s",
+      color: "black",
+      cursor: "pointer",
     },
-})
+    "@media(max-width: 600px)": {
+      fontSize: "12px !important",
+      paddingRight: "2px",
+      borderRight: "1px solid white",
+    },
+  },
+  navBar: {
+    backgroundColor: "#3e9def00",
+    boxShadow: "none",
+  },
+  scrolledNavbar: {
+    transition: "0.3s",
+    backgroundColor: "rgba(0,163,255,1)",
+  },
+  navDiv: {
+    display: "flex",
+    flexDirection: "row-reverse",
+    width: "50%",
+    marginLeft: "auto",
+    paddingRight: "2vw",
+    // eslint-disable-next-line no-useless-computed-key
+    ["@media(max-width: 600px)"]: {
+      paddingRight: "10vw",
+    },
+  },
+});
 
 const NavBar = () => {
-    const classes = useStyles()
-    const { t } = useTranslation();
-    const [scrolled, setScrolled] = useState(false);
+  const classes = useStyles();
+  const { t } = useTranslation();
+  const [scrolled, setScrolled] = useState(false);
 
-    window.addEventListener('scroll', function (e) {
-        if ((document.documentElement.scrollTop || document.body.scrollTop)  > window.innerHeight * 0.70) {
-            setScrolled(true)
-        } else {
-            setScrolled(false)
-        }
-    });
+  window.addEventListener("scroll", function (e) {
+    if (
+      (document.documentElement.scrollTop || document.body.scrollTop) >
+      window.innerHeight * 0.7
+    ) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  });
 
-    const handleClick = (event,target) => {
-        const anchor = (event.target.ownerDocument || document).querySelector(`#${target}`);
+  const handleClick = (event, target) => {
+    const anchor = (event.target.ownerDocument || document).querySelector(
+      `#${target}`
+    );
 
-        if (anchor) {
-            anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-    };
+    if (anchor) {
+      anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
 
-    return (
-        <>
-            <AppBar className={!scrolled ? classes.navBar : classes.scrolledNavbar} id="nav">
-                <Toolbar>
-                    <div className={classes.navDiv}>
-                        <Typography className={scrolled ? classes.scrollednavLink : classes.navLink} variant="h6" target="contact" onClick={(e) => handleClick(e,"contact")}>{t("contact")}</Typography>
-                        <Typography className={scrolled ? classes.scrollednavLink : classes.navLink} variant="h6" target="projects" onClick={(e) => handleClick(e,"projects")}>{t("courseProjects")}</Typography>
-                        <Typography className={scrolled ? classes.scrollednavLink : classes.navLink} variant="h6" target="skills" onClick={(e) => handleClick(e,"skills")}>{t("skills")}</Typography>
-                        <LanguageButton />
-                    </div>
-                </Toolbar>
-            </AppBar>
-        </>
-    )
-}
+  return (
+    <>
+      <AppBar
+        className={!scrolled ? classes.navBar : classes.scrolledNavbar}
+        id="nav"
+      >
+        <Toolbar>
+          <div className={classes.navDiv}>
+            <Typography
+              className={scrolled ? classes.scrollednavLink : classes.navLink}
+              variant="h6"
+              target="contact"
+              onClick={(e) => handleClick(e, "contact")}
+            >
+              {t("contact")}
+            </Typography>
+            <Typography
+              className={scrolled ? classes.scrollednavLink : classes.navLink}
+              variant="h6"
+              target="projects"
+              onClick={(e) => handleClick(e, "projects")}
+            >
+              {t("courseProjects")}
+            </Typography>
+            <Typography
+              className={scrolled ? classes.scrollednavLink : classes.navLink}
+              variant="h6"
+              target="skills"
+              onClick={(e) => handleClick(e, "skills")}
+            >
+              {t("skills")}
+            </Typography>
+            <LanguageButton />
+          </div>
+        </Toolbar>
+      </AppBar>
+    </>
+  );
+};
 
-export default NavBar
+export default NavBar;
