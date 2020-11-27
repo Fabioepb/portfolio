@@ -8,9 +8,7 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles({
   navLink: {
-    borderRight: "2px solid #3e9def",
-    marginRight: "10px",
-    paddingRight: "10px",
+    marginRight: "20px",
     fontWeight: 700,
     "&:hover": {
       transition: "0.3s",
@@ -19,9 +17,7 @@ const useStyles = makeStyles({
     },
     "@media(max-width: 600px)": {
       fontSize: "14px !important",
-      paddingRight: "2px",
-      marginRight: 2,
-      borderRight: "1px solid #3e9def",
+      marginRight: "5px",
     },
     "@media(max-width: 1300px)": {
       backgroundImage:
@@ -31,9 +27,7 @@ const useStyles = makeStyles({
     },
   },
   scrollednavLink: {
-    borderRight: "2px solid white",
-    paddingRight: "5px",
-    marginRight: 5,
+    marginRight: 20,
     fontWeight: 700,
     "&:hover": {
       transition: "0.3s",
@@ -41,9 +35,8 @@ const useStyles = makeStyles({
       cursor: "pointer",
     },
     "@media(max-width: 600px)": {
-      fontSize: "12px !important",
-      paddingRight: "2px",
-      borderRight: "1px solid white",
+      fontSize: "14px !important",
+      marginRight: 5,
     },
   },
   navBar: {

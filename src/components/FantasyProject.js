@@ -2,17 +2,16 @@
 import React from "react";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
-import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/styles";
 import { useTranslation } from "react-i18next";
+import { Container } from "@material-ui/core";
 
 const useStyles = makeStyles({
   mainContainer: {
-    background:
-      "linear-gradient(180deg, rgba(62,157,239,1) 0%, rgba(0,163,255,1) 45%, rgba(62,193,239,1) 100%);",
     paddingTop: "20vh",
     paddingBottom: "20vh",
-    color: "white",
+    paddingLeft: "5vw",
+    color: "black",
   },
   projectsTitle: {
     marginBottom: "5vh",
@@ -36,12 +35,12 @@ const useStyles = makeStyles({
     },
   },
   keystoneInfo: {
-    paddingRight: "5vw",
+    paddingLeft: "10vw",
     ["@media(max-width: 600px)"]: {
       fontSize: "20px",
     },
     ["@media(max-width: 1000px)"]: {
-      paddingRight: 0,
+      paddingLeft: 0,
     },
   },
   Image: {
@@ -53,17 +52,17 @@ const useStyles = makeStyles({
       width: "300px",
     },
   },
-  note: {
+  donorkitNote: {
     ["@media(max-width: 600px)"]: {
       fontSize: "20px",
     },
     ["@media(max-width: 1000px)"]: {
-      paddingLeft: "5vw",
+      paddingRight: "5vw",
     },
   },
 });
 
-const KeystoneProject = () => {
+const FantasyProject = () => {
   const classes = useStyles();
   const { t } = useTranslation();
 
@@ -73,8 +72,8 @@ const KeystoneProject = () => {
         <Grid container direction="row" justify="center" alignItems="center">
           <Grid item lg={6} md={6}>
             <img
-              alt="keystone-app"
-              src="https://i.imgur.com/ZzKQZxI.png"
+              alt="fantasy-app"
+              src="https://i.imgur.com/cxmsmdV.png"
               className={classes.Image}
             />
           </Grid>
@@ -85,15 +84,15 @@ const KeystoneProject = () => {
               fontSize={42}
               className={classes.title}
             >
-              Keystone Real Estate
+              FMS Fantasy
             </Box>
             <Box
               textAlign={"left"}
               fontWeight={300}
               fontSize={30}
-              className={classes.note}
+              className={classes.donorkitNote}
             >
-              {t("keystoneNote")}
+              {t("fantasyNote")}
             </Box>
           </Grid>
         </Grid>
@@ -102,4 +101,4 @@ const KeystoneProject = () => {
   );
 };
 
-export default KeystoneProject;
+export default FantasyProject;
