@@ -26,7 +26,7 @@ i18n
             "And others like basic scripting with Python, Object Oriented Programming, Branding, UX/UI focus.",
           luxTitle: "Express Web Application for a cloud mining service.",
           luxTech: `I was brought in to work as a full stack developer to try and finish the project which had suffered from development problems.\n\nI was in charge of:\n* The migration from Bootstrap 3.3.7 to Bootstrap 4.3\n* Doing a minor rework of the whole UI\n* Making the client Mobile responsive\n* Making sure the API was robust and secure.\n* Bug testing the API and client`,
-          note1: "Lets build your idea",
+          note1: "Let's build your idea",
           note2:
             "With over 2 years of Software Development experience, I have learned many skills and technologies that allow me to consistently deliver quality work to my clients",
           projectsNote:
@@ -97,6 +97,12 @@ i18n
           footerText2: "en Venezuela",
           copyright: "Todos los derechos reservados",
           copyright2: "Fabio Pineda ©️ 2020",
+          donorkitNote:
+            "Una aplicacion competidora a GoFundMe, le permite a organizaciones de caridad registradas recaudar fondos",
+          donorkitNote2:
+            "Cada campaña creada tiene una vista y un URL unico, que le permite a las organizaciones publicar campañas facilmente a traves de redes sociales",
+          fantasyNote:
+            "Un juego de Fantasy para la Freestyle Master Series de Urban Rooster, crea un equipo de freestylers y cada puntos cada temporada dependiendo de el rendimiento de tus jugadores",
         },
       },
     },
