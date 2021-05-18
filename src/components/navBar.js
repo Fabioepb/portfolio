@@ -1,61 +1,55 @@
-import React, { useState } from "react";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import LanguageButton from "./languageButton";
-import { useTranslation } from "react-i18next";
-import { makeStyles } from "@material-ui/core";
-import Typography from "@material-ui/core/Typography";
+import React, { useState } from 'react';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import LanguageButton from './languageButton';
+import { useTranslation } from 'react-i18next';
+import { makeStyles } from '@material-ui/core';
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   navLink: {
-    marginRight: "20px",
+    marginRight: '20px',
     fontWeight: 700,
-    "&:hover": {
-      transition: "0.3s",
-      color: "black",
-      cursor: "pointer",
+    '&:hover': {
+      transition: '0.3s',
+      color: 'black',
+      cursor: 'pointer',
     },
-    "@media(max-width: 600px)": {
-      fontSize: "14px !important",
-      marginRight: "5px",
-    },
-    "@media(max-width: 1300px)": {
-      backgroundImage:
-        "linear-gradient(180deg, rgba(62,157,239,1) 0%, rgba(0,163,255,1) 45%, rgba(62,193,239,1) 100%);",
-      WebkitBackgroundClip: "text",
-      WebkitTextFillColor: "transparent",
+    '@media(max-width: 600px)': {
+      fontSize: '14px !important',
+      marginRight: '5px',
     },
   },
   scrollednavLink: {
     marginRight: 20,
     fontWeight: 700,
-    "&:hover": {
-      transition: "0.3s",
-      color: "black",
-      cursor: "pointer",
+    '&:hover': {
+      transition: '0.3s',
+      color: 'black',
+      cursor: 'pointer',
     },
-    "@media(max-width: 600px)": {
-      fontSize: "14px !important",
+    '@media(max-width: 600px)': {
+      fontSize: '14px !important',
       marginRight: 5,
     },
   },
   navBar: {
-    backgroundColor: "#3e9def00",
-    boxShadow: "none",
+    backgroundColor: '#3e9def00',
+    boxShadow: 'none',
   },
   scrolledNavbar: {
-    transition: "0.3s",
-    backgroundColor: "rgba(0,163,255,1)",
+    transition: '0.3s',
+    backgroundColor: 'rgba(0,163,255,1)',
   },
   navDiv: {
-    display: "flex",
-    flexDirection: "row-reverse",
-    width: "50%",
-    marginLeft: "auto",
-    paddingRight: "2vw",
+    display: 'flex',
+    flexDirection: 'row-reverse',
+    width: '50%',
+    marginLeft: 'auto',
+    paddingRight: '2vw',
     // eslint-disable-next-line no-useless-computed-key
-    ["@media(max-width: 600px)"]: {
-      paddingRight: "10vw",
+    ['@media(max-width: 600px)']: {
+      paddingRight: '10vw',
     },
   },
 });
@@ -65,7 +59,7 @@ const NavBar = () => {
   const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
 
-  window.addEventListener("scroll", function (e) {
+  window.addEventListener('scroll', function (e) {
     if (
       (document.documentElement.scrollTop || document.body.scrollTop) >
       window.innerHeight * 0.7
@@ -82,7 +76,7 @@ const NavBar = () => {
     );
 
     if (anchor) {
-      anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+      anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   };
 
@@ -90,33 +84,33 @@ const NavBar = () => {
     <>
       <AppBar
         className={!scrolled ? classes.navBar : classes.scrolledNavbar}
-        id="nav"
+        id='nav'
       >
         <Toolbar>
           <div className={classes.navDiv}>
             <Typography
               className={scrolled ? classes.scrollednavLink : classes.navLink}
-              variant="h6"
-              target="contact"
-              onClick={(e) => handleClick(e, "contact")}
+              variant='h6'
+              target='contact'
+              onClick={(e) => handleClick(e, 'contact')}
             >
-              {t("contact")}
+              {t('contact')}
             </Typography>
             <Typography
               className={scrolled ? classes.scrollednavLink : classes.navLink}
-              variant="h6"
-              target="projects"
-              onClick={(e) => handleClick(e, "projects")}
+              variant='h6'
+              target='projects'
+              onClick={(e) => handleClick(e, 'projects')}
             >
-              {t("courseProjects")}
+              {t('courseProjects')}
             </Typography>
             <Typography
               className={scrolled ? classes.scrollednavLink : classes.navLink}
-              variant="h6"
-              target="skills"
-              onClick={(e) => handleClick(e, "skills")}
+              variant='h6'
+              target='skills'
+              onClick={(e) => handleClick(e, 'skills')}
             >
-              {t("skills")}
+              {t('skills')}
             </Typography>
             <LanguageButton />
           </div>

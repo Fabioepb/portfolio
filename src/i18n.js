@@ -52,6 +52,8 @@ i18n
             'Each campaign has their unique campaign view and URL, that can be shared through social media to help raise funds',
           fantasyNote:
             "An Fantasy game for Urban Rooster's Freestyle Master Series, build your roster and win points every season depending on your favorite freestyler's performance",
+          error:
+            "Oops! Looks like there's an issue and the email wasn't delivered.",
         },
       },
       es: {
@@ -103,13 +105,12 @@ i18n
             'Cada campaña creada tiene una vista y un URL unico, que le permite a las organizaciones publicar campañas facilmente a traves de redes sociales',
           fantasyNote:
             'Un juego de Fantasy para la Freestyle Master Series de Urban Rooster, crea un equipo de freestylers y cada puntos cada temporada dependiendo de el rendimiento de tus jugadores',
+          error: 'Oops! Parece que hubo un error y tu email no fue entregado.',
         },
       },
     },
     lng: 'en',
-
     keySeparator: false, // we do not use keys in form messages.welcome
-
     interpolation: {
       escapeValue: false, // react already safes from xss
     },
