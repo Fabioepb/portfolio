@@ -1,14 +1,14 @@
 /* eslint-disable no-useless-computed-key */
 import React from 'react';
-import { makeStyles } from '@material-ui/styles';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
+import { makeStyles } from 'tss-react/mui';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 import { useTranslation } from 'react-i18next';
-import Button from '@material-ui/core/Button';
+import Button from '@mui/material/Button';
 import NavBar from './navBar';
 import ScrollButton from './ScrollButton';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles()({
   landing: {
     height: '97vh',
     width: '60vw',
@@ -26,8 +26,9 @@ const useStyles = makeStyles({
     marginTop: 0,
     marginBottom: 0,
     fontSize: '4.5em',
+    textShadow: '1px 1px 2px black',
     display: 'flex',
-    color: 'black',
+    color: 'white',
     ['@media(max-width: 1300px)']: {
       paddingTop: '2vh',
       fontSize: '3.5em',
@@ -39,9 +40,10 @@ const useStyles = makeStyles({
   },
   secondaryText: {
     width: '40vw',
-    color: 'black',
+    color: 'white',
     textAlign: 'justify',
     fontSize: '24px',
+    textShadow: '1px 1px 2px black',
     marginBottom: 25,
     ['@media(max-width: 1300px)']: {
       width: '90vw',
@@ -57,7 +59,8 @@ const useStyles = makeStyles({
     },
   },
   name: {
-    color: 'black',
+    color: 'white',
+    textShadow: '1px 1px 2px black',
     ['@media(max-width: 500px)']: {
       fontSize: '20px',
     },
@@ -70,9 +73,10 @@ const useStyles = makeStyles({
   },
   contactText: {
     display: 'flex',
-    color: 'black',
+    color: 'white',
     justifyContent: 'center',
     textAlign: 'center',
+    textShadow: '1px 1px 2px black',
     ['@media(max-width: 1000px)']: {
       fontSize: '23px',
     },
@@ -103,12 +107,12 @@ const useStyles = makeStyles({
   },
   link: {
     textDecoration: 'none',
-    color: 'black',
-    borderBottom: '5px solid rgba(62,193,239,1)',
+    color: 'white',
+    borderBottom: '5px solid rgb(243,243,243)',
     marginLeft: 5,
     '&:hover': {
       transition: '0.3s !important',
-      backgroundColor: 'rgba(62,193,239,1)',
+      backgroundColor: 'rgb(0,249,250)',
     },
   },
   mainDiv: {
@@ -124,7 +128,7 @@ const useStyles = makeStyles({
 });
 
 const LandingHeader = (props) => {
-  const classes = useStyles();
+  const { classes } = useStyles();
   const { t } = useTranslation();
 
   const handleClick = (event, target) => {
@@ -144,7 +148,6 @@ const LandingHeader = (props) => {
       <Box height='100vh' width='100%'>
         <iframe
           src='https://my.spline.design/librarydeviceclouds-f0baca0b3c5e034a3c5b277175212ec8/'
-          frameborder='0'
           width='100%'
           height='100%'
           title='background 3d design'

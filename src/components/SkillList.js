@@ -1,9 +1,9 @@
 import React from "react"
-import { makeStyles } from '@material-ui/styles';
-import Box from '@material-ui/core/Box';
-import Grid from '@material-ui/core/Grid';
+import { makeStyles } from 'tss-react/mui';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles()({
     skill: {
         padding: "5px",
         marginTop: "50px",
@@ -16,7 +16,7 @@ const useStyles = makeStyles({
 })
 
 const SkillList = () => {
-    const classes = useStyles();
+    const { classes } = useStyles();
 
     return (
         <>
@@ -28,67 +28,67 @@ const SkillList = () => {
             <Grid item lg={3} md={3} xs={6} sm={6}>
                 <Box textAlign={"initial"} fontWeight={400} fontSize={30} className={classes.skill} >
                     React
-          </Box>
+                </Box>
             </Grid>
             <Grid item lg={3} md={3} xs={6} sm={6}>
                 <Box textAlign={"initial"} fontWeight={400} fontSize={30} className={classes.skill}>
                     HTML5
-          </Box>
+                </Box>
             </Grid>
             <Grid item lg={3} md={3} xs={6} sm={6}>
                 <Box textAlign={"initial"} fontWeight={400} fontSize={30} className={classes.skill}>
                     CSS3
-          </Box>
+                </Box>
             </Grid>
             <Grid item lg={3} md={3} xs={6} sm={6}>
                 <Box textAlign={"initial"} fontWeight={400} fontSize={30} className={classes.skill}>
                     SCSS
-          </Box>
+                </Box>
             </Grid>
             <Grid item lg={3} md={3} xs={6} sm={6}>
                 <Box textAlign={"initial"} fontWeight={400} fontSize={30} className={classes.skill}>
                     Nodejs
-          </Box>
+                </Box>
             </Grid>
             <Grid item lg={3} md={3} xs={6} sm={6}>
                 <Box textAlign={"initial"} fontWeight={400} fontSize={30} className={classes.skill}>
                     Expressjs
-          </Box>
+                </Box>
             </Grid>
             <Grid item lg={3} md={3} xs={6} sm={6}>
                 <Box textAlign={"initial"} fontWeight={400} fontSize={30} className={classes.skill}>
                     PostgreSQL
-          </Box>
+                </Box>
             </Grid>
             <Grid item lg={3} md={3} xs={6} sm={6}>
                 <Box textAlign={"initial"} fontWeight={400} fontSize={30} className={classes.skill}>
                     MongoDB
-          </Box>
+                </Box>
             </Grid>
             <Grid item lg={3} md={3} xs={6} sm={6}>
                 <Box textAlign={"initial"} fontWeight={400} fontSize={30} className={classes.skill}>
                     Jest
-          </Box>
+                </Box>
             </Grid>
             <Grid item lg={3} md={3} xs={6} sm={6}>
                 <Box textAlign={"initial"} fontWeight={400} fontSize={30} className={classes.skill}>
                     React Native
-          </Box>
+                </Box>
             </Grid>
             <Grid item lg={3} md={3} xs={6} sm={6}>
                 <Box textAlign={"initial"} fontWeight={400} fontSize={30} className={classes.skill}>
                     TypeScript
-        </Box>
+                </Box>
             </Grid>
             <Grid item lg={3} md={3} xs={6} sm={6}>
                 <Box textAlign={"initial"} fontWeight={400} fontSize={30} className={classes.skill}>
                     ORM
-        </Box>
+                </Box>
             </Grid>
             <Grid item lg={3} md={3} xs={6} sm={6}>
                 <Box textAlign={"initial"} fontWeight={400} fontSize={30} className={classes.skill}>
                     Responsive Design
-        </Box>
+                </Box>
             </Grid>
             <Grid item lg={3} md={3} xs={6} sm={6}>
                 <Box textAlign={"initial"} fontWeight={400} fontSize={30} className={classes.skill}>
@@ -98,7 +98,7 @@ const SkillList = () => {
             <Grid item lg={3} md={3} xs={6} sm={6}>
                 <Box textAlign={"initial"} fontWeight={400} fontSize={30} className={classes.skill}>
                     Ionic 3
-        </Box>
+                </Box>
             </Grid>
 
         </>

@@ -1,12 +1,12 @@
 /* eslint-disable no-useless-computed-key */
 import React from 'react';
-import Box from '@material-ui/core/Box';
-import Grid from '@material-ui/core/Grid';
-import Container from '@material-ui/core/Container';
-import { makeStyles } from '@material-ui/styles';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import Container from '@mui/material/Container';
+import { makeStyles } from 'tss-react/mui';
 import { useTranslation } from 'react-i18next';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles()({
   mainContainer: {
     background:
       'linear-gradient(180deg, rgba(62,157,239,1) 0%, rgba(0,163,255,1) 45%, rgba(62,193,239,1) 100%);',
@@ -64,7 +64,7 @@ const useStyles = makeStyles({
 });
 
 const KeystoneProject = () => {
-  const classes = useStyles();
+  const { classes } = useStyles();
   const { t } = useTranslation();
 
   return (

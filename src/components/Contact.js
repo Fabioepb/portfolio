@@ -1,16 +1,16 @@
 /* eslint-disable no-useless-computed-key */
 import React, { useState } from 'react';
-import Box from '@material-ui/core/Box';
-import Grid from '@material-ui/core/Grid';
-import Container from '@material-ui/core/Container';
-import { makeStyles } from '@material-ui/styles';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import Container from '@mui/material/Container';
+import { makeStyles } from 'tss-react/mui';
 import { useTranslation } from 'react-i18next';
-import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
-import { CircularProgress } from '@material-ui/core';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import CircularProgress from '@mui/material/CircularProgress';
 const templateId = 'template_P6Dg0IXs';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles()({
   mainContainer: {
     background:
       'linear-gradient(180deg, rgba(62,157,239,1) 0%, rgba(0,163,255,1) 45%, rgba(62,193,239,1) 100%);',
@@ -80,7 +80,7 @@ const useStyles = makeStyles({
 });
 
 const Contact = () => {
-  const classes = useStyles();
+  const { classes } = useStyles();
   const { t } = useTranslation();
   const [values, setValues] = useState({ message: '', name: '', email: '' });
   const [loading, setLoading] = useState(false);
@@ -95,13 +95,13 @@ const Contact = () => {
     setLoading(true);
     setError('');
     window.emailjs
-      .send('gmail', templateId, variables)
+      .send('service_bdww47c', templateId, variables)
       .then((res) => {
         setSent(true);
         setLoading(false);
         setError('');
         console.log('Email successfully sent!');
-        setTimeout(() => setSent(false), 6000);
+        setTimeout(() => setSent(false), 10000);
       })
       // Handle errors here however you like, or use a React error boundary
       .catch((err) => {
@@ -111,7 +111,7 @@ const Contact = () => {
         );
         setError(
           err.text ||
-            'Please Try again or use a different method of communicating with me'
+          'Please Try again or use a different method of communicating with me'
         );
         setLoading(false);
       });
@@ -124,11 +124,14 @@ const Contact = () => {
       from_email: values.email,
     });
   };
+
   return (
     <section className={classes.mainContainer}>
       <Grid container direction='row' justify='center' alignItems='center'>
-        <Grid item lg={10} md={10}>
+        <Grid marginX={'auto'}
+          item lg={10} md={10}>
           <Box
+            marginX={'auto'}
             textAlign={'center'}
             fontWeight={700}
             fontSize={42}

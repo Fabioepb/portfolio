@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
 import LanguageButton from './languageButton';
 import { useTranslation } from 'react-i18next';
-import { makeStyles } from '@material-ui/core';
-import Typography from '@material-ui/core/Typography';
+import { makeStyles } from 'tss-react/mui';
+import Typography from '@mui/material/Typography';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles()({
   navLink: {
     marginRight: '20px',
     fontWeight: 700,
@@ -55,7 +55,7 @@ const useStyles = makeStyles({
 });
 
 const NavBar = () => {
-  const classes = useStyles();
+  const { classes } = useStyles();
   const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
 

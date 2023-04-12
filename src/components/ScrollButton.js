@@ -1,11 +1,11 @@
 import React from "react";
-import useScrollTrigger from "@material-ui/core/useScrollTrigger";
-import Zoom from "@material-ui/core/Zoom";
-import { makeStyles } from "@material-ui/styles";
-import Fab from "@material-ui/core/Fab";
-import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
+import Zoom from "@mui/material/Zoom";
+import { makeStyles } from 'tss-react/mui';
+import Fab from "@mui/material/Fab";
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles()({
   root: {
     position: "fixed",
     bottom: "25px",
@@ -18,7 +18,7 @@ const useStyles = makeStyles({
 
 function ScrollTop(props) {
   const { children, window } = props;
-  const classes = useStyles();
+  const { classes } = useStyles();
 
   const trigger = useScrollTrigger({
     target: window ? window() : undefined,
@@ -51,7 +51,7 @@ const ScrollButton = (props) => {
   return (
     <ScrollTop {...props}>
       <Fab size="small" aria-label="scroll back to top">
-        <KeyboardArrowUpIcon classes={{ root: classes.button }} />
+        <ArrowUpwardIcon classes={{ root: classes.button }} />
       </Fab>
     </ScrollTop>
   );

@@ -1,12 +1,12 @@
 /* eslint-disable no-useless-computed-key */
 import React from 'react';
-import Box from '@material-ui/core/Box';
-import Grid from '@material-ui/core/Grid';
-import { makeStyles } from '@material-ui/styles';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import { makeStyles } from 'tss-react/mui';
 import { useTranslation } from 'react-i18next';
-import { Container } from '@material-ui/core';
+import Container from '@mui/material/Container';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles()({
   mainContainer: {
     paddingTop: '10vh',
     paddingBottom: '10vh',
@@ -63,7 +63,7 @@ const useStyles = makeStyles({
 });
 
 const LuxminingProject = () => {
-  const classes = useStyles();
+  const { classes } = useStyles();
   const { t } = useTranslation();
 
   return (

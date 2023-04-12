@@ -1,19 +1,19 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/styles';
+import { makeStyles } from 'tss-react/mui';
 import { useTranslation } from 'react-i18next';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Box from '@material-ui/core/Box';
-import Grid from '@material-ui/core/Grid';
-import Container from '@material-ui/core/Container';
+import CssBaseline from '@mui/material/CssBaseline';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
+import Container from '@mui/material/Container';
 import SkillList from './SkillList';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles()({
   skillSection: {
     paddingTop: "15vh",
     paddingBottom: "15vh",
     "@media(max-width: 1200px)": {
       paddingTop: '20vh'
-  },
+    },
   },
   skillTitle: {
     marginBottom: "5vh",
@@ -24,7 +24,7 @@ const useStyles = makeStyles({
     "@media(max-width: 600px)": {
       fontSize: "30px"
     },
-    
+
   },
   skillSummary: {
     marginBottom: "5vh",
@@ -37,7 +37,7 @@ const useStyles = makeStyles({
 
 
 export default function SkillSection(props) {
-  let classes = useStyles()
+  const { classes } = useStyles()
   const { t } = useTranslation();
   return (
     <Container>
