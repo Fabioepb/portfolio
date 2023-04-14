@@ -68,7 +68,7 @@ const NavBar = () => {
   window.addEventListener('scroll', function (e) {
     if (
       (document.documentElement.scrollTop || document.body.scrollTop) >
-      window.innerHeight * 0.7
+      window.innerHeight * 0.01
     ) {
       setScrolled(true);
     } else {

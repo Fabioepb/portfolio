@@ -44,12 +44,16 @@ const useStyles = makeStyles()({
     },
   },
   Image: {
-    width: '600px',
-    '@media(max-width: 900px)': {
-      width: '400px',
+
+    maxWidth: '40vw',
+
+    '@media(max-width:900px)': {
+      maxWidth: '350px !important'
+
     },
     '@media(max-width: 400px)': {
-      width: '300px',
+
+      maxWidth: '250px !important'
     },
   },
   note: {
@@ -92,8 +96,8 @@ const LuxminingProject = () => {
             <img
               alt='keystone-app'
               src='https://i.imgur.com/NEKBleL.png'
+
               className={classes.Image}
-              style={{ maxWidth: '550px' }}
             />
           </Grid>
         </Grid>
