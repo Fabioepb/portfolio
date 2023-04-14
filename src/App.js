@@ -12,6 +12,8 @@ import Social from './components/Social';
 import Footer from './components/Footer';
 import DonorkitProject from './components/DonorkitProject';
 import FantasyProject from './components/FantasyProject';
+import AddirktiveProject from './components/addirktiveProject';
+import QatarQuinielaProject from './components/QatarQuinielaProject';
 
 const useStyles = makeStyles()({
   container: {
@@ -30,6 +32,8 @@ function App() {
       <LandingHeader />
       {/* <Container className={classes.container}> */}
       <SkillSection />
+      <AddirktiveProject />
+      <QatarQuinielaProject />
       <DonorkitProject />
       <FantasyProject />
       <KeystoneProject />

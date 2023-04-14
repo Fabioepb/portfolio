@@ -10,11 +10,10 @@ i18n
           salute: 'Hi.',
           name: 'My name is ',
           description1:
-            "I'm a Computer Engineer and Software Developer, my area of focus is Web and Mobile development. Most of my projects are published on my",
-          description2:
-            'I consider myself a focused guy, with a strange curiosity for the unknown that motivates me to learn and improve every day.',
+            "I'm Computer Engineer and Software Developer specializing in Web and Mobile development. I'm passionate about learning and improving each day – it keeps me on my toes!",
           description3:
-            'Outside of programming, I love cryptocurrency, listening to podcast, coffee, and video games.',
+            "Besides programming, I'm a fan of cryptocurrency, enjoy listening to podcasts, savoring a good cup of coffee, and having fun with video games.",
+          githubLink: "Check out my projects on GitHub, where you'll see that I'm always on the lookout for innovation.",
           onlyName: 'Fabio Pineda',
           skills: 'Skills',
           aboutMe: 'About me',
@@ -26,7 +25,7 @@ i18n
             'And others like basic scripting with Python, Object Oriented Programming, Branding, UX/UI focus.',
           luxTitle: 'Express Web Application for a cloud mining service.',
           luxTech: `I was brought in to work as a full stack developer to try and finish the project which had suffered from development problems.\n\nI was in charge of:\n* The migration from Bootstrap 3.3.7 to Bootstrap 4.3\n* Doing a minor rework of the whole UI\n* Making the client Mobile responsive\n* Making sure the API was robust and secure.\n* Bug testing the API and client`,
-          note1: "Let's build your idea",
+          note1: "Let's bring your project to life!",
           note2:
             'With over 4 years of Software Development experience, I have learned many skills and technologies that allow me to consistently deliver quality work to my clients',
           projectsNote:
@@ -47,13 +46,16 @@ i18n
           copyright: 'All rights reserved',
           copyright2: 'Fabio Pineda ©️ 2023',
           donorkitNote:
-            'A fully featured GoFundMe competitor, allows registered non profit organizations to gather raise funds through campaigns',
+            'A GoFundMe competitor, it allows registered non profit organizations to gather raise funds through campaigns in a modern straight forward way',
           donorkitNote2:
-            'Each campaign has their unique campaign view and URL, that can be shared through social media to help raise funds',
+            'Each campaign has their own unique campaign profile and URL developed with social networks in mind, it helps propagate campaigns through Instagram, Facebook and more',
           fantasyNote:
             "An Fantasy game for Urban Rooster's Freestyle Master Series, build your roster and win points every season depending on your favorite freestyler's performance",
+          quinielaNote1: 'A small betting app for friends to bet on the results of the 2022 Fifa World Cup, with a ranking system and private/public groups for friends to see how they stack up',
           error:
             "Oops! Looks like there's an issue and the email wasn't delivered.",
+          addirktive1: 'A comprehensive and versatile dashboard designed to empower users with the ability to seamlessly deposit, withdraw, and exchange cryptocurrencies across a diverse range of blockchains, including Ethereum, Binance Smart Chain, Stellar Network, WAX, and more.',
+          addirktive2: 'It also acts as a hub for an NFT Game, allowing users to manage their account, move their funds, mint and open NFTs packs, and much more.'
         },
       },
       es: {
@@ -61,11 +63,11 @@ i18n
           salute: 'Hola.',
           name: 'Mi nombre es ',
           description1:
-            'Soy Ing. de Computación y desarrollador de software, mi área de enfoque es el desarrollo Web y Móvil. La mayoría de mis proyectos se encuentran alojados en mi',
-          description2:
-            'Me considero una persona perseverante, y con una curiosidad por lo desconocido que me motiva a aprender y ser mejor cada día.',
+            'Ingeniero en Computación y Desarrollador de Software especializado en desarrollo Web y Móvil. Me apasiona aprender y mejorar cada día, ¡siempre buscando nuevos retos!',
           description3:
-            'Además de mi carrera como desarrollador, me encantan los podcasts, el café y algún día me gustaría aprender a pintar.',
+            'Además de la programación, soy un fanático de las criptomonedas, disfruto escuchando podcasts, saboreando una buena taza de café y divirtiéndome con videojuegos.',
+          githubLink: 'Echa un vistazo a mis proyectos en mi GitHub, donde verás que siempre estoy en busca de innovación.',
+
           onlyName: 'Fabio Pineda',
           jobTitle: 'Ing. de Computación y Desarrollador de Software',
           skills: 'Conocimientos',
@@ -79,7 +81,7 @@ i18n
           luxTitle:
             'Aplicacion Express Web para la venta de servicios de Minado en la nube',
           luxTech: `Me contrataron para trabajar como desarrollador de pila completa para intentar finalizar el proyecto que había sufrido problemas de desarrollo.\n\nEstaba a cargo de: \n* La migración de Bootstrap 3.3.7 a Bootstrap 4.3 \n* Se hizo un pequeño trabajo de revisión de toda la interfaz de usuario \n* Haciendo que el cliente responda de forma móvil \n* Asegurárme de que la API fuera robusta y segura.\n *librar de bugs y probar la API y el cliente`,
-          note1: 'Creemos cosas increibles',
+          note1: '¡Hagamos realidad tu proyecto!',
           note2:
             'Con 4 años de experiencia como desarrollador de software, he obtenido conocimientos y aprendido tecnologías que me permiten entregar productos de calidad a mis clientes consistentemente.',
           projectsNote:
@@ -93,6 +95,7 @@ i18n
           message: 'Contenido del correo',
           fullname: 'Nombre Completo',
           location: 'Ubicación',
+          quinielaNote1: 'Una aplicacion de apuestas para que amigos intenten adivinar los resultados de el Mundial Fifa 2022, con un sistemas de rangos, grupos publicos y privados para determinar quien conoce mas de fútbol',
           email:
             '¡He recibido tu mensaje! Trataré de responder lo mas pronto posible',
           footerText1: 'Hecho con ',
@@ -106,6 +109,8 @@ i18n
           fantasyNote:
             'Un juego de Fantasy para la Freestyle Master Series de Urban Rooster, crea un equipo de freestylers y cada puntos cada temporada dependiendo de el rendimiento de tus jugadores',
           error: 'Oops! Parece que hubo un error y tu email no fue entregado.',
+          addirktive1: 'Un panel de control integral y versátil diseñado para empoderar a los usuarios con la capacidad de depositar, retirar e intercambiar criptomonedas sin problemas en una amplia gama de Blockchains, incluidas Ethereum, Binance Smart Chain, Stellar Network, WAX y más.',
+          addirktive2: 'Actua como centro centralizado para una experiencia de juego NFT envolvente, permitiendo a los usuarios administrar eficientemente sus cuentas, transferir fondos, acuñar NFTs, desbloquear paquetes exclusivos de NFT y explorar una multitud de otras características emocionantes.'
         },
       },
     },

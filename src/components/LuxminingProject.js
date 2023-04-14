@@ -93,6 +93,7 @@ const LuxminingProject = () => {
               alt='keystone-app'
               src='https://i.imgur.com/NEKBleL.png'
               className={classes.Image}
+              style={{ maxWidth: '550px' }}
             />
           </Grid>
         </Grid>

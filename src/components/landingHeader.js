@@ -13,6 +13,7 @@ const useStyles = makeStyles()({
     height: '97vh',
     width: '60vw',
     padding: '1vh 10vw',
+    maxWidth: '94vw',
     ['@media(max-width: 1300px)']: {
       padding: '25px',
       width: '100vw',
@@ -25,7 +26,7 @@ const useStyles = makeStyles()({
     paddingTop: '7vh',
     marginTop: 0,
     marginBottom: 0,
-    fontSize: '4.5em',
+    fontSize: '50px',
     textShadow: '1px 1px 2px black',
     display: 'flex',
     color: 'white',
@@ -34,7 +35,7 @@ const useStyles = makeStyles()({
       fontSize: '3.5em',
     },
     ['@media(max-width: 500px)']: {
-      paddingTop: '5vh',
+      paddingTop: '10vh',
       fontSize: '2.5em',
     },
   },
@@ -42,7 +43,7 @@ const useStyles = makeStyles()({
     width: '40vw',
     color: 'white',
     textAlign: 'justify',
-    fontSize: '24px',
+    fontSize: '30px',
     textShadow: '1px 1px 2px black',
     marginBottom: 25,
     ['@media(max-width: 1300px)']: {
@@ -51,15 +52,16 @@ const useStyles = makeStyles()({
     },
     ['@media(max-width: 500px)']: {
       width: '90vw',
-      fontSize: '18px',
+      fontSize: '20px',
     },
     ['@media(max-width: 360px)']: {
       width: '90vw',
-      fontSize: '15px',
+      fontSize: '18px',
     },
   },
   name: {
     color: 'white',
+
     textShadow: '1px 1px 2px black',
     ['@media(max-width: 500px)']: {
       fontSize: '20px',
@@ -95,6 +97,9 @@ const useStyles = makeStyles()({
   myName: {
     fontSize: '2.2em',
     paddingTop: 0,
+    display: 'flex',
+    color: 'white',
+    textShadow: '1px 1px 2px black',
     ['@media(max-width: 500px)']: {
       fontSize: '20px',
     },
@@ -109,7 +114,6 @@ const useStyles = makeStyles()({
     textDecoration: 'none',
     color: 'white',
     borderBottom: '5px solid rgb(243,243,243)',
-    marginLeft: 5,
     '&:hover': {
       transition: '0.3s !important',
       backgroundColor: 'rgb(0,249,250)',
@@ -167,7 +171,7 @@ const LandingHeader = (props) => {
             textAlign={'initial'}
             component='div'
             fontWeight={500}
-            className={`${classes.mainText} ${classes.myName}`}
+            className={` ${classes.myName}`}
           >
             {t('name')}
             <Box className={classes.name}>&nbsp;Fabio Pineda</Box>
@@ -179,9 +183,7 @@ const LandingHeader = (props) => {
             className={classes.secondaryText}
           >
             {t('description1')}
-            <a href='https://github.com/fabioepb' className={classes.link}>
-              GitHub.
-            </a>
+
           </Box>
           <Box
             textAlign={'initial'}
@@ -189,8 +191,12 @@ const LandingHeader = (props) => {
             fontWeight={300}
             className={classes.secondaryText}
           >
-            {t('description2')}
+            <a href='https://github.com/fabioepb' className={classes.link}>
+              {t('githubLink')}
+
+            </a>
           </Box>
+
           <Box
             textAlign={'initial'}
             component='div'

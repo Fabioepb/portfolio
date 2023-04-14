@@ -72,25 +72,6 @@ const DonorkitProject = () => {
     <section className={classes.mainContainer}>
       <Container>
         <Grid container direction="row" justify="center" alignItems="center">
-          <Grid marginX={'auto'} item lg={10} md={10}>
-            <Box
-              textAlign={"center"}
-              fontWeight={700}
-              fontSize={42}
-              className={classes.projectsTitle}
-            >
-              {t("workProjects")}
-            </Box>
-          </Grid>
-          <Box
-            textAlign={"initial"}
-            fontWeight={300}
-            fontSize={30}
-            className={classes.projectsSummary}
-            id="projects"
-          >
-            {t("projectsNote")}
-          </Box>
           <Box
             marginX={'auto'}
             textAlign={"center"}
@@ -106,6 +87,7 @@ const DonorkitProject = () => {
                 alt="donorkit-app"
                 src="https://i.imgur.com/0aWTtXI.png"
                 className={classes.Image}
+                style={{ maxWidth: '80vw' }}
               />
             </Grid>
             <Grid
@@ -154,6 +136,7 @@ const DonorkitProject = () => {
               <img
                 alt="donorkit-app-mobile"
                 height={350}
+                style={{ maxWidth: '80vw' }}
                 src="https://i.imgur.com/LnYh4It.png"
               />
             </Grid>

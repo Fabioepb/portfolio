@@ -92,6 +92,7 @@ const FantasyProject = () => {
               alt='fantasy-app'
               src='https://i.imgur.com/cxmsmdV.png'
               className={classes.Image}
+              style={{ maxWidth: '80vw' }}
             />
           </Grid>
           <Grid item lg={6} md={6} className={classes.keystoneInfo}>
@@ -100,6 +101,7 @@ const FantasyProject = () => {
               fontWeight={300}
               fontSize={30}
               className={classes.donorkitNote}
+              style={{ maxWidth: '80vw' }}
             >
               {t('fantasyNote')}
             </Box>

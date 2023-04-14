@@ -11,12 +11,13 @@ const useStyles = makeStyles()({
     marginRight: '20px',
     fontWeight: 700,
     '&:hover': {
-      transition: '0.3s',
-      color: 'black',
+      transition: '0.1s',
+      textShadow: '1px 1px 5px black',
+      fontSize: 21,
       cursor: 'pointer',
     },
     '@media(max-width: 600px)': {
-      fontSize: '14px !important',
+      fontSize: '18px !important',
       marginRight: '5px',
     },
   },
@@ -25,11 +26,12 @@ const useStyles = makeStyles()({
     fontWeight: 700,
     '&:hover': {
       transition: '0.3s',
-      color: 'black',
+      textShadow: '1px 1px 5px black',
       cursor: 'pointer',
     },
     '@media(max-width: 600px)': {
-      fontSize: '14px !important',
+      fontSize: '18px !important',
+      padding: 5,
       marginRight: 5,
     },
   },
@@ -44,12 +46,16 @@ const useStyles = makeStyles()({
   navDiv: {
     display: 'flex',
     flexDirection: 'row-reverse',
+
     width: '50%',
     marginLeft: 'auto',
     paddingRight: '2vw',
     // eslint-disable-next-line no-useless-computed-key
     ['@media(max-width: 600px)']: {
       paddingRight: '10vw',
+      flexDirection: 'column',
+      marginRight: '100%',
+      textAlign: 'left'
     },
   },
 });

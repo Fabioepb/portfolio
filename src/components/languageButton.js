@@ -17,9 +17,9 @@ const LanguageButton = () => {
   }
 
   return (
-    <div style={{ position: 'absolute', right: '15px', top: '15px' }}>
+    <div onClick={() => changeTongue(english)} style={{ position: 'absolute', right: '15px', top: '15px' }}>
       <Fab aria-label="Language" variant='extended' style={{ padding: 0, height: 32, width: 32, minWidth: 32 }}>
-        <img alt="language-pick" onClick={() => changeTongue(english)} src={english ? "https://cdn1.iconfinder.com/data/icons/world-flags-circular/1000/Flag_of_United_Kingdom_-_Circle-512.png" : "https://cdn.countryflags.com/thumbs/spain/flag-round-250.png"} height={24} width={24} />
+        <img alt="language-pick" src={english ? "https://cdn1.iconfinder.com/data/icons/world-flags-circular/1000/Flag_of_United_Kingdom_-_Circle-512.png" : "https://cdn.countryflags.com/thumbs/spain/flag-round-250.png"} height={24} width={24} />
       </Fab>
     </div>
   )

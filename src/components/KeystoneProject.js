@@ -84,6 +84,7 @@ const KeystoneProject = () => {
               alt='keystone-app'
               src='https://i.imgur.com/ZzKQZxI.png'
               className={classes.Image}
+              style={{ maxWidth: '80vw' }}
             />
           </Grid>
           <Grid item lg={6} md={6} className={classes.keystoneInfo}>
