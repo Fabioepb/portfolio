@@ -79,7 +79,14 @@ const useStyles = makeStyles()({
   },
 });
 
+const maxCharacters = {
+  message: 650,
+  email: 50,
+  name: 50
+}
+
 const Contact = () => {
+  const [isDisabled, setDisabled] = useState(false)
   const { classes } = useStyles();
   const { t } = useTranslation();
   const [values, setValues] = useState({ message: '', name: '', email: '' });
@@ -88,6 +95,10 @@ const Contact = () => {
   const [sent, setSent] = useState(false);
 
   const handleChange = (event) => {
+    if (event.target.value.length > maxCharacters[event.target.name]) {
+      setValues({ ...values, [event.target.name]: event.target.value.slice(0, maxCharacters[event.target.name]) });
+      return
+    }
     setValues({ ...values, [event.target.name]: event.target.value });
   };
 
@@ -118,11 +129,17 @@ const Contact = () => {
   };
 
   const handleSubmit = (event) => {
-    sendFeedback(templateId, {
-      from_message: values.message,
-      from_name: values.name,
-      from_email: values.email,
-    });
+    if (!isDisabled) {
+      sendFeedback(templateId, {
+        from_message: values.message.slice(0, maxCharacters.message),
+        from_name: values.name.slice(0, maxCharacters.name),
+        from_email: values.email.slice(0, maxCharacters.email),
+      });
+      setDisabled(true)
+      setTimeout(() => {
+        setDisabled(false)
+      }, 10000)
+    }
   };
 
   return (
@@ -192,7 +209,7 @@ const Contact = () => {
               label={t('message')}
               name='message'
               multiline
-              rows='8'
+              rows={8}
               variant='outlined'
               value={values.message}
               className={classes.input}
@@ -201,6 +218,8 @@ const Contact = () => {
           </Grid>
           <Grid>
             <Button
+              disabled={isDisabled}
+              title={isDisabled ? 'Please wait to send another email' : 'Send email'}
               variant='outlined'
               className={classes.button}
               onClick={handleSubmit}
