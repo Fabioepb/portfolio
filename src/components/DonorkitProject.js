@@ -9,10 +9,10 @@ import { useTranslation } from "react-i18next";
 const useStyles = makeStyles()({
   mainContainer: {
     background:
-      "linear-gradient(180deg, rgba(62,157,239,1) 0%, rgba(0,163,255,1) 45%, rgba(62,193,239,1) 100%);",
+      "white",
     paddingTop: "10vh",
     paddingBottom: "10vh",
-    color: "white",
+    color: "black",
   },
   projectsTitle: {
     marginBottom: "5vh",
@@ -53,7 +53,7 @@ const useStyles = makeStyles()({
       width: "300px",
     },
   },
-  donorkitNote: {
+  note: {
     marginLeft: 20,
     ["@media(max-width: 600px)"]: {
       fontSize: "20px",

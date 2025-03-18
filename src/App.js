@@ -14,6 +14,7 @@ import DonorkitProject from './components/DonorkitProject';
 import FantasyProject from './components/FantasyProject';
 import AddirktiveProject from './components/addirktiveProject';
 import QatarQuinielaProject from './components/QatarQuinielaProject';
+import CircuitProject from './components/circuitProject';
 
 const useStyles = makeStyles()({
   container: {
@@ -32,6 +33,7 @@ function App() {
       <LandingHeader />
       {/* <Container className={classes.container}> */}
       <SkillSection />
+      <CircuitProject />
       <AddirktiveProject />
       <QatarQuinielaProject />
       <DonorkitProject />

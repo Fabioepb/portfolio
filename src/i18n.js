@@ -56,7 +56,8 @@ i18n
             "Oops! Looks like there's an issue and the email wasn't delivered.",
           addirktive1: 'A comprehensive and versatile dashboard designed to empower users with the ability to seamlessly deposit, withdraw, and exchange cryptocurrencies across a diverse range of blockchains, including Ethereum, Binance Smart Chain, Stellar Network, WAX, and more.',
           addirktive2: 'It also acts as a hub for an NFT Game, allowing users to manage their account, move their funds, mint and open NFTs packs, and much more.',
-          language:"Switch Language"
+          language:"Switch Language",
+          circuit1: 'A secure and efficient platform designed to streamline the process of sweeping cryptographic assets and providing immediate keyless recovery to ensure business continuity and security.',
         },
       },
       es: {
@@ -112,7 +113,8 @@ i18n
           error: 'Oops! Parece que hubo un error y tu email no fue entregado.',
           addirktive1: 'Un panel de control integral y versátil diseñado para empoderar a los usuarios con la capacidad de depositar, retirar e intercambiar criptomonedas sin problemas en una amplia gama de Blockchains, incluidas Ethereum, Binance Smart Chain, Stellar Network, WAX y más.',
           addirktive2: 'Actua como centro centralizado para una experiencia de juego NFT envolvente, permitiendo a los usuarios administrar eficientemente sus cuentas, transferir fondos, acuñar NFTs, desbloquear paquetes exclusivos de NFT y explorar una multitud de otras características emocionantes.',
-          language:"Cambiar Idioma"
+          language:"Cambiar Idioma",
+          circuit1:"Una plataforma segura y eficaz diseñada para agilizar el proceso de barrido de activos criptográficos y proporcionar una recuperación inmediata sin claves para garantizar la continuidad y la seguridad de la empresa."
         },
       },
     },

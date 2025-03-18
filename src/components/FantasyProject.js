@@ -8,10 +8,11 @@ import Container from '@mui/material/Container';
 
 const useStyles = makeStyles()({
   mainContainer: {
-    paddingTop: '20vh',
+    paddingTop: '10vh',
     paddingBottom: '20vh',
     paddingLeft: '5vw',
-    color: 'black',
+    color: 'white',
+    background: "linear-gradient(180deg, rgba(62,157,239,1) 0%, rgba(0,163,255,1) 45%, rgba(62,193,239,1) 100%);"
   },
   projectsTitle: {
     marginBottom: '5vh',
