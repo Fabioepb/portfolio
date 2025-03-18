@@ -82,7 +82,7 @@ const SkillList = () => {
             </Grid>
             <Grid item lg={3} md={3} xs={6} sm={6}>
                 <Box textAlign={"initial"} fontWeight={400} fontSize={30} className={classes.skill}>
-                    ORM
+                    AI Prompt Engineering
                 </Box>
             </Grid>
             <Grid item lg={3} md={3} xs={6} sm={6}>
@@ -97,7 +97,7 @@ const SkillList = () => {
             </Grid>
             <Grid item lg={3} md={3} xs={6} sm={6}>
                 <Box textAlign={"initial"} fontWeight={400} fontSize={30} className={classes.skill}>
-                    Ionic 3
+                    Cryptocurrency
                 </Box>
             </Grid>
 
