@@ -5,6 +5,8 @@ import LanguageButton from './languageButton';
 import { useTranslation } from 'react-i18next';
 import { makeStyles } from 'tss-react/mui';
 import Typography from '@mui/material/Typography';
+import Container from '@mui/material/Container';
+
 
 const useStyles = makeStyles()({
   navLink: {
@@ -20,6 +22,9 @@ const useStyles = makeStyles()({
       fontSize: '18px !important',
       marginRight: '5px',
     },
+    "@media(min-width: 600px)":{
+      marginRight: '20px',
+    }
   },
   scrollednavLink: {
     marginRight: 20,
@@ -44,20 +49,20 @@ const useStyles = makeStyles()({
     backgroundColor: 'rgba(0,163,255,1)',
   },
   navDiv: {
+    width: '100%',
     display: 'flex',
-    flexDirection: 'row-reverse',
-
-    width: '50%',
-    marginLeft: 'auto',
-    paddingRight: '2vw',
-    // eslint-disable-next-line no-useless-computed-key
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     ['@media(max-width: 600px)']: {
-      paddingRight: '10vw',
-      flexDirection: 'column',
-      marginRight: '100%',
       textAlign: 'left'
     },
   },
+  navigationLinks:{
+    display: "flex",
+  },
+  toolbar:{
+    padding: "0px !important",
+  }
 });
 
 const NavBar = () => {
@@ -92,8 +97,10 @@ const NavBar = () => {
         className={!scrolled ? classes.navBar : classes.scrolledNavbar}
         id='nav'
       >
-        <Toolbar>
+        <Container>
+        <Toolbar className={classes.toolbar}>
           <div className={classes.navDiv}>
+            <div className={classes.navigationLinks}>
             <Typography
               className={scrolled ? classes.scrollednavLink : classes.navLink}
               variant='h6'
@@ -118,9 +125,11 @@ const NavBar = () => {
             >
               {t('skills')}
             </Typography>
+            </div>
             <LanguageButton />
           </div>
         </Toolbar>
+        </Container>
       </AppBar>
     </>
   );

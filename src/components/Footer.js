@@ -22,6 +22,7 @@ const useStyles = makeStyles()({
     display: "flex",
     flexDirection: "column",
     paddingTop: "10px",
+    color:"white"
   },
   iconBase: {
     paddingRight: "5px",
