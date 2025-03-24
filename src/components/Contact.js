@@ -77,6 +77,9 @@ const useStyles = makeStyles()({
     backgroundColor: '#d44747',
     color: 'white',
   },
+  errorHighlight:{
+    borderColor: '#d44747',
+  }
 });
 
 const maxCharacters = {
@@ -85,11 +88,23 @@ const maxCharacters = {
   name: 50
 }
 
+const validateContactForm = (formValues) => {
+  let error = ""
+
+  for(let key of Object.keys(formValues)){
+    if(!formValues[key].trim()){
+      error = `${key} is required`
+      break
+    }
+  }
+  return error
+}
+
 const Contact = () => {
   const [isDisabled, setDisabled] = useState(false)
-  const { classes } = useStyles();
+  const { classes, cx } = useStyles();
   const { t } = useTranslation();
-  const [values, setValues] = useState({ message: '', name: '', email: '' });
+  const [values, setValues] = useState({ name: '', email: '', message: '' });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [sent, setSent] = useState(false);
@@ -105,6 +120,14 @@ const Contact = () => {
   const sendFeedback = (templateId, variables) => {
     setLoading(true);
     setError('');
+    const error = validateContactForm(values)
+
+    if (error) {
+      setError(error)
+      setLoading(false)
+      return
+    }
+
     window.emailjs
       .send('service_bdww47c', templateId, variables)
       .then((res) => {
@@ -184,7 +207,7 @@ const Contact = () => {
               multiline
               rowsMax='4'
               value={values.name}
-              className={classes.input}
+              className={cx(classes.input, error.includes("name") && classes.errorHighlight)}
               onChange={handleChange}
               variant='outlined'
             />
@@ -200,7 +223,7 @@ const Contact = () => {
               value={values.email}
               onChange={handleChange}
               variant='outlined'
-              className={classes.input}
+              className={cx(classes.input, error.includes("email") && classes.errorHighlight)}
             />
           </Grid>
           <Grid className={classes.inputGrid}>
@@ -212,7 +235,7 @@ const Contact = () => {
               rows={8}
               variant='outlined'
               value={values.message}
-              className={classes.input}
+              className={cx(classes.input, error.includes("message") && classes.errorHighlight)}
               onChange={handleChange}
             />
           </Grid>
@@ -221,7 +244,7 @@ const Contact = () => {
               disabled={isDisabled}
               title={isDisabled ? 'Please wait to send another email' : 'Send email'}
               variant='outlined'
-              className={classes.button}
+              className={cx(classes.button)}
               onClick={handleSubmit}
             >
               {loading ? (
