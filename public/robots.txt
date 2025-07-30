@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Disallow sensitive or unnecessary files
+Disallow: /static/
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Allow important assets
+Allow: /static/*.svg
+Allow: /static/*.webp
+Allow: /static/*.png
+Allow: /static/*.jpg
+Allow: /static/*.jpeg
+
+# Sitemap location
+Sitemap: https://fabiopineda.com/sitemap.xml

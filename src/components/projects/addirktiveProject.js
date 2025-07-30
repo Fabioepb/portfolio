@@ -21,7 +21,7 @@ const useStyles = makeStyles()({
             left: 0,
             right: 0,
             bottom: 0,
-            backgroundImage: "url('/dots-bg.webp')",
+            backgroundImage: "url('/static/dots-bg.webp')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
