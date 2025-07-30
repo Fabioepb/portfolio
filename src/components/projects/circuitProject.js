@@ -58,6 +58,8 @@ const useStyles = makeStyles()({
     width: "400px",
     position: "relative",
     zIndex: 150,
+    userSelect: "none",
+    pointerEvents: "none",
     "@media(max-width: 900px)": {
       width: "400px",
     },

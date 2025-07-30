@@ -50,6 +50,8 @@ const useStyles = makeStyles()({
     },
     Image: {
         width: '600px',
+        userSelect: "none",
+        pointerEvents: "none",
         '@media(max-width: 900px)': {
             width: '400px',
         },
@@ -88,7 +90,7 @@ const QatarQuinielaProject = () => {
                             alt='qatar-app'
                             src='https://i.imgur.com/KcpLUzi.png'
                             className={classes.Image}
-                            style={{ maxWidth: '80vw' }}
+                            style={{ maxWidth: '90vw' }}
                         />
                     </Grid>
                     <Grid item lg={6} md={6} className={classes.quinielaInfo}>

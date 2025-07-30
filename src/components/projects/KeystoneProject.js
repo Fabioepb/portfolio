@@ -48,11 +48,13 @@ const useStyles = makeStyles()({
   },
   Image: {
     width: '600px',
+    userSelect: "none",
+    pointerEvents: "none",
     '@media(max-width: 900px)': {
       width: '400px',
     },
     '@media(max-width: 400px)': {
-      width: '300px',
+      width: '350px',
     },
   },
   note: {
@@ -86,7 +88,7 @@ const KeystoneProject = () => {
               alt='keystone-app'
               src='https://i.imgur.com/ZzKQZxI.png'
               className={classes.Image}
-              style={{ maxWidth: '80vw' }}
+              style={{ maxWidth: '100vw' }}
             />
           </Grid>
           <Grid item lg={6} md={6} className={classes.keystoneInfo}>

@@ -63,6 +63,8 @@ const useStyles = makeStyles()({
     },
     Image: {
         width: "500px",
+        userSelect: "none",
+        pointerEvents: "none",
         "@media(max-width: 900px)": {
             width: "400px",
         },
@@ -101,8 +103,8 @@ const AddirktiveProject = () => {
                     <Grid container justify="space-between" alignItems="center">
                         <Grid item lg={6} md={6} xs={12} sm={12}>
                             <img
-                                alt="donorkit-app"
-                                style={{ maxWidth: '80vw' }}
+                                alt="addirktive-app"
+                                style={{ maxWidth: '90vw' }}
                                 src="https://i.imgur.com/dGktLDJ.png"
                                 className={classes.Image}
                             />
@@ -153,7 +155,7 @@ const AddirktiveProject = () => {
                             <img
                                 alt="addirktive-app-mobile"
                                 height={300}
-                                style={{ maxWidth: '80vw' }}
+                                style={{ maxWidth: '100%' }}
 
                                 src="https://i.imgur.com/CJQHzk9.png"
                             />

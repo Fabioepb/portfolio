@@ -56,8 +56,10 @@ const useStyles = makeStyles()({
     width: "300px",
     zIndex: 150,
     position: "relative",
+    userSelect: "none",
+    pointerEvents: "none",
     "@media(max-width: 900px)": {
-      width: "400px",
+      width: "300px",
     },
     "@media(max-width: 400px)": {
       width: "300px",
@@ -96,10 +98,10 @@ const BitesProject = () => {
           <Grid container justify="space-between" alignItems="center">
             <Grid item lg={6} md={6} xs={12} sm={12}>
               <img
-                alt="donorkit-app"
+                alt="bites-app"
                 src="https://i.imgur.com/VMBBqZ1.png"
                 className={classes.Image}
-                style={{ maxWidth: '80vw' }}
+                style={{ maxWidth: '90vw' }}
               />
             </Grid>
             <Grid
@@ -146,9 +148,9 @@ const BitesProject = () => {
             </Grid>
             <Grid item lg={6} md={6} xs={12} sm={12}>
               <img
-                alt="donorkit-app-mobile"
+                alt="bites-app-mobile"
                 height={450}
-                style={{ maxWidth: '80vw' }}
+                style={{ maxWidth: '96vw', userSelect: "none", pointerEvents: "none" }}
                 src="https://i.imgur.com/r8K0r07.png"
               />
             </Grid>
