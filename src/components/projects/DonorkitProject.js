@@ -150,7 +150,7 @@ const DonorkitProject = () => {
               <img
                 alt="donorkit-app-mobile"
                 height={350}
-                style={{ maxWidth: '80vw' }}
+                style={{ maxWidth: '80vw', userSelect: "none", pointerEvents: "none" }}
                 src="https://i.imgur.com/LnYh4It.png"
               />
             </Grid>

@@ -228,7 +228,7 @@ const Contact = () => {
               placeholder='John Doe'
               name='name'
               multiline
-              rowsMax='4'
+              maxRows={4}
               value={values.name}
               className={cx(classes.input, error.includes("name") && classes.errorHighlight)}
               onChange={handleChange}
@@ -242,7 +242,7 @@ const Contact = () => {
               name='email'
               placeholder='JohnDoe@email.com'
               multiline
-              rowsMax='4'
+              maxRows='4'
               value={values.email}
               onChange={handleChange}
               variant='outlined'

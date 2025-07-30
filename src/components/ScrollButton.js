@@ -10,6 +10,7 @@ const useStyles = makeStyles()({
     position: "fixed",
     bottom: "25px",
     right: "25px",
+    zIndex: 2000,
   },
   button: {
     color: "#00a3ff",
