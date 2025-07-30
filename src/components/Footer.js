@@ -10,8 +10,8 @@ const useStyles = makeStyles()({
     paddingTop: "1vh",
     paddingBottom: "1vh",
     color: "white",
-    background:
-      "linear-gradient(180deg, rgba(62,157,239,1) 0%, rgba(0,163,255,1) 100%);",
+    // background:
+    //   "linear-gradient(180deg, rgba(62,157,239,1) 0%, rgba(0,163,255,1) 100%);",
     fontSize: "12px",
   },
   footerText: {
@@ -42,12 +42,12 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <section className={classes.mainContainer}>
+    <section className={`${classes.mainContainer} footer-bg`}>
       <Grid container direction="column" justify="center" alignItems="center">
         <Grid item lg={12} md={12}>
           <Box
             textAlign={"center"}
-            fontWeight={500}
+            fontWeight={800}
             fontSize={14}
             className={classes.footerText}
           >
@@ -65,7 +65,7 @@ const Footer = () => {
         <Grid item lg={12} md={12}>
           <Box
             textAlign={"center"}
-            fontWeight={500}
+            fontWeight={800}
             fontSize={14}
             className={classes.copyrightText}
           >

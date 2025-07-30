@@ -7,26 +7,23 @@ import { useTranslation } from 'react-i18next';
 import Button from '@mui/material/Button';
 import NavBar from './navBar';
 import ScrollButton from './ScrollButton';
+import { Container } from '@mui/material';
+import clsx from 'clsx';
+import CornerDotsSVG from './svg/cornerDotsSVG';
 
 const useStyles = makeStyles()({
   landing: {
     height: '97vh',
-    width: '60vw',
-    padding: '1vh 10vw',
-    maxWidth: '94vw',
-    ['@media(max-width: 1300px)']: {
-      padding: '25px',
-      width: '100vw',
-    },
-    ['@media(max-width: 500px)']: {
-      padding: 10,
-    },
+    width: '100%',
+    position: "relative",
   },
   mainText: {
     paddingTop: '7vh',
     marginTop: 0,
     marginBottom: 0,
     fontSize: '50px',
+    zIndex: 150,
+    position: "relative",
     textShadow: '1px 1px 2px black',
     display: 'flex',
     color: 'white',
@@ -40,9 +37,11 @@ const useStyles = makeStyles()({
     },
   },
   secondaryText: {
-    width: '40vw',
+    width: '100%',
     color: 'white',
     textAlign: 'justify',
+    zIndex: 150,
+    position: "relative",
     fontSize: '30px',
     textShadow: '1px 1px 2px black',
     marginBottom: 25,
@@ -79,6 +78,8 @@ const useStyles = makeStyles()({
     justifyContent: 'center',
     textAlign: 'center',
     textShadow: '1px 1px 2px black',
+    zIndex: 150,
+    position: "relative",
     ['@media(max-width: 1000px)']: {
       fontSize: '23px',
     },
@@ -88,11 +89,16 @@ const useStyles = makeStyles()({
   },
   contactButton: {
     background:
-      'linear-gradient(180deg, rgba(62,157,239,1) 0%, rgba(0,163,255,1) 45%, rgba(62,193,239,1) 100%)',
+      '#3EA7ED',
     color: 'black',
-    borderColor: '3px solid black',
+    // borderColor: '3px solid black',
     marginTop: 10,
-    zIndex: 90,
+    zIndex: 150,
+    position: "relative",
+    '&:hover': {
+      transition: '0.3s !important',
+      backgroundColor: '#399CDFFF',
+    },
   },
   myName: {
     fontSize: '2.2em',
@@ -113,21 +119,25 @@ const useStyles = makeStyles()({
   link: {
     textDecoration: 'none',
     color: 'white',
-    borderBottom: '5px solid rgb(243,243,243)',
     '&:hover': {
-      transition: '0.3s !important',
-      backgroundColor: 'rgb(0,249,250)',
+      borderBottom: '5px solid rgb(243,243,243)',
+      transition: '0.1s !important',
+      // backgroundColor: 'rgb(0,249,250)',
     },
   },
   mainDiv: {
     display: 'flex',
-    position: 'absolute',
-    top: '0px',
-    width: '70%',
     flexDirection: 'row',
     ['@media(max-width: 1300px)']: {
       flexDirection: 'column',
     },
+  },
+  background: {
+    position: 'relative',
+  },
+  container: {
+    borderLeft: "3px dotted #5e5e5e3b",
+    borderRight: "3px dotted #5e5e5e3b",
   },
 });
 
@@ -146,17 +156,11 @@ const LandingHeader = (props) => {
   };
 
   return (
-    <>
+    <Box className={clsx("landing-bg", classes.background)}>
       <NavBar />
       <div id='back-to-top-anchor' />
-      <Box height='100vh' width='100%'>
-        <iframe
-          src='https://my.spline.design/librarydeviceclouds-f0baca0b3c5e034a3c5b277175212ec8/'
-          width='100%'
-          height='100%'
-          title='background 3d design'
-        ></iframe>
-      </Box>
+        <CornerDotsSVG />
+      <Container className={classes.container} height='100vh' width='100%'>
       <div className={classes.mainDiv}>
         <Typography component='div' className={classes.landing}>
           <Box
@@ -221,6 +225,7 @@ const LandingHeader = (props) => {
                 fontSize={24}
                 onClick={(e) => handleClick(e, 'contact')}
                 color='white'
+                // component={"button"}
               >
                 {t('contactMe')}
               </Box>
@@ -228,8 +233,10 @@ const LandingHeader = (props) => {
           </div>
         </Typography>
       </div>
+
+      </Container>
       <ScrollButton />
-    </>
+    </Box>
   );
 };
 

@@ -8,15 +8,18 @@ import { useTranslation } from 'react-i18next';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import CircularProgress from '@mui/material/CircularProgress';
+import CornerDotsSVG from './svg/cornerDotsSVG';
 const templateId = 'template_P6Dg0IXs';
 
 const useStyles = makeStyles()({
   mainContainer: {
-    background:
-      'linear-gradient(180deg, rgba(62,157,239,1) 0%, rgba(0,163,255,1) 45%, rgba(62,193,239,1) 100%);',
+    position: "relative",
+    // background:
+    //   'linear-gradient(180deg, rgba(62,157,239,1) 0%, rgba(0,163,255,1) 45%, rgba(62,193,239,1) 100%);',
     paddingTop: '10vh',
     paddingBottom: '10vh',
     color: 'white',
+    overflow: "hidden",
   },
   projectsTitle: {
     marginBottom: '5vh',
@@ -42,10 +45,23 @@ const useStyles = makeStyles()({
     '& .MuiInputBase-root': {
       color: 'white',
     },
+    // Normal state
     '& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline': {
       borderColor: 'white',
     },
+    // Hover state
+    '& .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline': {
+      borderColor: 'white',
+    },
+    // Focused state
+    '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
+      borderColor: 'white',
+    },
+    // Label styles
     '& .MuiInputLabel-root': {
+      color: 'white',
+    },
+    '& .MuiInputLabel-root.Mui-focused': {
       color: 'white',
     },
   },
@@ -54,6 +70,10 @@ const useStyles = makeStyles()({
     width: '50vw',
     height: '5vh',
     borderColor: 'white',
+    '&:hover': {
+      transition: '0.3s !important',
+      backgroundColor: '#399DDF59',
+    },
     ['@media(max-width: 600px)']: {
       width: '80vw',
     },
@@ -166,8 +186,9 @@ const Contact = () => {
   };
 
   return (
-    <section className={classes.mainContainer}>
-      <Grid container direction='row' justify='center' alignItems='center'>
+    <section className={`${classes.mainContainer} landing-bg`}>
+              <CornerDotsSVG />
+      <Grid container direction='row' justify='center' alignItems='center' zIndex={151}>
         <Grid marginX={'auto'}
           item lg={10} md={10}>
           <Box
@@ -175,6 +196,7 @@ const Contact = () => {
             textAlign={'center'}
             fontWeight={700}
             fontSize={42}
+            component={"h1"}
             className={classes.projectsTitle}
           >
             {t('contactNote')}
@@ -185,6 +207,7 @@ const Contact = () => {
             textAlign={'center'}
             fontWeight={300}
             fontSize={30}
+            component={"span"}
             className={classes.projectsSummary}
           >
             {t('contactNote2')}

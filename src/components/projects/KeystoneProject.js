@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 
 const useStyles = makeStyles()({
   mainContainer: {
-    background: "linear-gradient(180deg, rgba(62,193,239,1) 0%, rgba(0,163,255,1) 45%, rgba(62,157,239,1) 100%);",
+    //background: "linear-gradient(180deg, rgba(62,193,239,1) 0%, rgba(0,163,255,1) 45%, rgba(62,157,239,1) 100%);",
     paddingTop: '10vh',
     paddingBottom: '20vh',
     color: 'white',
@@ -27,6 +27,9 @@ const useStyles = makeStyles()({
   },
   title: {
     marginBottom: '5vh',
+    zIndex: 150,
+    position: "relative",
+    textShadow: "0 0 5px rgba(0, 0, 0, 0.5)",
     ['@media(max-width: 600px)']: {
       fontSize: '30px',
     },

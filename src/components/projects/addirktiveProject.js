@@ -9,10 +9,25 @@ import { useTranslation } from "react-i18next";
 const useStyles = makeStyles()({
     mainContainer: {
         background:
-            "linear-gradient(180deg, rgba(62,157,239,1) 0%, rgba(0,163,255,1) 45%, rgba(62,193,239,1) 100%);",
+            "white",
         paddingTop: "10vh",
         paddingBottom: "10vh",
-        color: "white",
+        color: "black",
+        position: "relative",
+        '&::before': {
+            content: '""',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundImage: "url('/dots-bg.webp')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            opacity: 0.5,
+            zIndex: 1,
+          },
     },
     projectsTitle: {
         marginBottom: "5vh",
@@ -28,6 +43,8 @@ const useStyles = makeStyles()({
     },
     title: {
         marginBottom: "5vh",
+        position: "relative",
+        textShadow: "0 0 5px rgba(0, 0, 0, 0.5)",
         ["@media(max-width: 600px)"]: {
             fontSize: "30px",
         },
@@ -45,7 +62,7 @@ const useStyles = makeStyles()({
         },
     },
     Image: {
-        width: "400px",
+        width: "500px",
         "@media(max-width: 900px)": {
             width: "400px",
         },
@@ -64,32 +81,13 @@ const useStyles = makeStyles()({
     },
 });
 
-const circuitProject = () => {
+const AddirktiveProject = () => {
     const { classes } = useStyles();
     const { t } = useTranslation();
 
     return (
         <section className={classes.mainContainer}>
             <Container>
-                <Grid marginX={'auto'} item lg={10} md={10}>
-                    <Box
-                        textAlign={"center"}
-                        fontWeight={700}
-                        fontSize={42}
-                        className={classes.projectsTitle}
-                    >
-                        {t("workProjects")}
-                    </Box>
-                </Grid>
-                <Box
-                    textAlign={"initial"}
-                    fontWeight={300}
-                    fontSize={30}
-                    className={classes.projectsSummary}
-                    id="projects"
-                >
-                    {t("projectsNote")}
-                </Box>
                 <Grid container direction="row" justify="center" alignItems="center">
                     <Box
                         marginX={'auto'}
@@ -98,14 +96,14 @@ const circuitProject = () => {
                         fontSize={46}
                         className={classes.title}
                     >
-                        Circuit Security
+                        addirktive Dashboard
                     </Box>
                     <Grid container justify="space-between" alignItems="center">
                         <Grid item lg={6} md={6} xs={12} sm={12}>
                             <img
-                                alt="circuit-app"
-                                style={{ maxWidth: '70vw' }}
-                                src="https://i.imgur.com/BC8H0nC.png"
+                                alt="donorkit-app"
+                                style={{ maxWidth: '80vw' }}
+                                src="https://i.imgur.com/dGktLDJ.png"
                                 className={classes.Image}
                             />
                         </Grid>
@@ -121,10 +119,44 @@ const circuitProject = () => {
                                 textAlign={"left"}
                                 fontWeight={300}
                                 fontSize={30}
-                                className={classes.note}
+                                className={classes.donorkitNote}
                             >
-                                {t("circuit1")}
+                                {t("addirktive1")}
                             </Box>
+                        </Grid>
+                    </Grid>
+                    <Grid
+                        style={{ marginTop: 50 }}
+                        container
+                        justify="space-between"
+                        alignItems="center"
+                    >
+                        <Grid
+                            item
+                            lg={6}
+                            md={6}
+                            xs={12}
+                            sm={12}
+                            className={classes.Information}
+                        >
+                            <Box
+                                textAlign={"left"}
+                                fontWeight={300}
+                                fontSize={30}
+                                mb="25px"
+                                className={classes.donorkitNote}
+                            >
+                                {t("addirktive2")}
+                            </Box>
+                        </Grid>
+                        <Grid item lg={6} md={6} xs={12} sm={12}>
+                            <img
+                                alt="addirktive-app-mobile"
+                                height={300}
+                                style={{ maxWidth: '80vw' }}
+
+                                src="https://i.imgur.com/CJQHzk9.png"
+                            />
                         </Grid>
                     </Grid>
                 </Grid>
@@ -133,4 +165,4 @@ const circuitProject = () => {
     );
 };
 
-export default circuitProject;
+export default AddirktiveProject;

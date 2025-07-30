@@ -12,10 +12,13 @@ const useStyles = makeStyles()({
     paddingBottom: '20vh',
     paddingLeft: '5vw',
     color: 'white',
-    background: "linear-gradient(180deg, rgba(62,157,239,1) 0%, rgba(0,163,255,1) 45%, rgba(62,193,239,1) 100%);"
+    zIndex: 150,
+    position: "relative",
   },
   projectsTitle: {
     marginBottom: '5vh',
+    position: "relative",
+    textShadow: "0 0 5px rgba(0, 0, 0, 0.5)",
     ['@media(max-width: 600px)']: {
       fontSize: '30px',
     },
@@ -28,6 +31,8 @@ const useStyles = makeStyles()({
   },
   title: {
     marginBottom: '5vh',
+    position: "relative",
+    textShadow: "0 0 5px rgba(0, 0, 0, 0.5)",
     ['@media(max-width: 600px)']: {
       fontSize: '30px',
     },
@@ -35,8 +40,10 @@ const useStyles = makeStyles()({
       textAlign: 'center',
     },
   },
-  keystoneInfo: {
+  fantasyInfo: {
     paddingLeft: '10vw',
+    position: "relative",
+    zIndex: 150,
     ['@media(max-width: 600px)']: {
       fontSize: '20px',
     },
@@ -53,21 +60,12 @@ const useStyles = makeStyles()({
       width: '300px',
     },
   },
-  donorkitNote: {
+  quinielaNote: {
     ['@media(max-width: 600px)']: {
       fontSize: '20px',
     },
     ['@media(max-width: 1000px)']: {
       paddingRight: '5vw',
-    },
-  },
-  title: {
-    marginBottom: '5vh',
-    ['@media(max-width: 600px)']: {
-      fontSize: '30px',
-    },
-    ['@media(max-width: 1000px)']: {
-      textAlign: 'center',
     },
   },
 });
@@ -93,10 +91,10 @@ const FantasyProject = () => {
               alt='fantasy-app'
               src='https://i.imgur.com/cxmsmdV.png'
               className={classes.Image}
-              style={{ maxWidth: '80vw' }}
+              style={{ maxWidth: '80vw', zIndex: 150 }}
             />
           </Grid>
-          <Grid item lg={6} md={6} className={classes.keystoneInfo}>
+          <Grid item lg={6} md={6} className={classes.fantasyInfo}>
             <Box
               textAlign={'left'}
               fontWeight={300}

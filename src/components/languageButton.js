@@ -26,7 +26,7 @@ const LanguageButton = () => {
   return (
     <div title={t('language')} onClick={changeTongue} className={classes.languageButton} >
       <Fab aria-label="Language" variant='extended' style={{ padding: 0, height: 32, width: 32, minWidth: 32 }}>
-        <img alt="language-pick" src={english ? "https://cdn1.iconfinder.com/data/icons/world-flags-circular/1000/Flag_of_United_Kingdom_-_Circle-512.png" : "https://cdn.countryflags.com/thumbs/spain/flag-round-250.png"} height={24} width={24} />
+        <img alt="language-pick" src={english ? "https://www.shutterstock.com/image-vector/usa-america-set-circular-circle-600nw-2479083185.jpg" : "https://cdn.countryflags.com/thumbs/spain/flag-round-250.png"} height={24} width={24} style={{ borderRadius: "99%" }} />
       </Fab>
     </div>
   )

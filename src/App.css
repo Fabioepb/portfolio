@@ -14,3 +14,19 @@ body:before {
   z-index: -10;
   background-color: white;
 }
+
+.landing-bg{
+  background: #00b7ff;
+background: -webkit-linear-gradient(161deg, rgba(0, 183, 255, 1) 0%, rgba(87, 199, 133, 1) 91%, rgba(86, 206, 133, 1) 100%);
+background: -moz-linear-gradient(161deg, rgba(0, 183, 255, 1) 0%, rgba(87, 199, 133, 1) 91%, rgba(86, 206, 133, 1) 100%);
+background: linear-gradient(161deg, rgba(0, 183, 255, 1) 0%, rgba(87, 199, 133, 1) 91%, rgba(86, 206, 133, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00B7FF", endColorstr="#56CE85", GradientType=0);
+}
+
+.footer-bg{
+  background: #57C785;
+background: -webkit-linear-gradient(220deg, rgba(87, 199, 133, 1) 0%, rgba(86, 206, 178, 1) 100%);
+background: -moz-linear-gradient(220deg, rgba(87, 199, 133, 1) 0%, rgba(86, 206, 178, 1) 100%);
+background: linear-gradient(220deg, rgba(87, 199, 133, 1) 0%, rgba(86, 206, 178, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#57C785", endColorstr="#56CEB2", GradientType=0);
+}

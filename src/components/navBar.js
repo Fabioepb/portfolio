@@ -43,10 +43,11 @@ const useStyles = makeStyles()({
   navBar: {
     backgroundColor: '#3e9def00',
     boxShadow: 'none',
+    borderBottom: '3px dotted #5e5e5e3b',
   },
   scrolledNavbar: {
     transition: '0.3s',
-    backgroundColor: 'rgba(0,163,255,1)',
+    background: 'linear-gradient(138deg,rgba(57, 156, 223, 1) 0%, rgba(79, 196, 155, 1) 69%)',
   },
   navDiv: {
     width: '100%',

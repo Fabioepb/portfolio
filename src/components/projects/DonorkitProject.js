@@ -13,9 +13,12 @@ const useStyles = makeStyles()({
     paddingTop: "10vh",
     paddingBottom: "10vh",
     color: "black",
+    zIndex: 150,
   },
   projectsTitle: {
     marginBottom: "5vh",
+    zIndex: 150,
+    position: "relative",
     ["@media(max-width: 600px)"]: {
       fontSize: "30px",
     },
@@ -28,6 +31,9 @@ const useStyles = makeStyles()({
   },
   title: {
     marginBottom: "5vh",
+    position: "relative",
+    zIndex: 150,
+    textShadow: "0 0 5px rgba(0, 0, 0, 0.5)",
     ["@media(max-width: 600px)"]: {
       fontSize: "30px",
     },
@@ -37,6 +43,8 @@ const useStyles = makeStyles()({
   },
   Information: {
     paddingRight: "5vw",
+    position: "relative",
+    zIndex: 150,
     ["@media(max-width: 600px)"]: {
       fontSize: "20px",
     },
@@ -46,6 +54,8 @@ const useStyles = makeStyles()({
   },
   Image: {
     width: "500px",
+    zIndex: 150,
+    position: "relative",
     "@media(max-width: 900px)": {
       width: "400px",
     },
@@ -55,6 +65,8 @@ const useStyles = makeStyles()({
   },
   note: {
     marginLeft: 20,
+    zIndex: 150,
+    position: "relative",
     ["@media(max-width: 600px)"]: {
       fontSize: "20px",
     },

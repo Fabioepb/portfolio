@@ -58,6 +58,8 @@ i18n
           addirktive2: 'It also acts as a hub for an NFT Game, allowing users to manage their account, move their funds, mint and open NFTs packs, and much more.',
           language:"Switch Language",
           circuit1: 'A secure and efficient platform designed to streamline the process of sweeping cryptographic assets and providing immediate keyless recovery to ensure business continuity and security.',
+          bitesNote: 'A social network mobile app for sharing your favorite food spots around the world.',
+          bitesNote2: 'Available for both iOS and Android, it features Google Maps integration to find the best places to eat in your city, user profiles, and a feed of reviews left by other users.',
         },
       },
       es: {
@@ -114,7 +116,9 @@ i18n
           addirktive1: 'Un panel de control integral y versátil diseñado para empoderar a los usuarios con la capacidad de depositar, retirar e intercambiar criptomonedas sin problemas en una amplia gama de Blockchains, incluidas Ethereum, Binance Smart Chain, Stellar Network, WAX y más.',
           addirktive2: 'Actua como centro centralizado para una experiencia de juego NFT envolvente, permitiendo a los usuarios administrar eficientemente sus cuentas, transferir fondos, acuñar NFTs, desbloquear paquetes exclusivos de NFT y explorar una multitud de otras características emocionantes.',
           language:"Cambiar Idioma",
-          circuit1:"Una plataforma segura y eficaz diseñada para agilizar el proceso de barrido de activos criptográficos y proporcionar una recuperación inmediata sin claves para garantizar la continuidad y la seguridad de la empresa."
+          circuit1:"Una plataforma segura y eficaz diseñada para agilizar el proceso de barrido de activos criptográficos y proporcionar una recuperación inmediata sin claves para garantizar la continuidad y la seguridad de la empresa.",
+          bitesNote: 'Una aplicación social móvil para compartir tus lugares favoritos de comida alrededor del mundo.',
+          bitesNote2: 'Disponible para iOS y Android, cuenta con integración de Google Maps para encontrar los mejores lugares para comer en tu ciudad, perfiles de usuario y un feed de reseñas publicadas por otros usuarios.',
         },
       },
     },

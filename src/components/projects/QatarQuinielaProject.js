@@ -12,7 +12,7 @@ const useStyles = makeStyles()({
         paddingBottom: '20vh',
         paddingLeft: '5vw',
         color: 'white',
-        background: 'linear-gradient(180deg, rgba(62,157,239,1) 0%, rgba(0,163,255,1) 45%, rgba(62,193,239,1) 100%);',
+        background: "linear-gradient(324deg, rgba(62, 167, 237, 1) 0%, rgba(88, 209, 181, 1) 93%)",
     },
     projectsTitle: {
         marginBottom: '5vh',
@@ -28,6 +28,8 @@ const useStyles = makeStyles()({
     },
     title: {
         marginBottom: '5vh',
+        position: "relative",
+        textShadow: "0 0 5px rgba(0, 0, 0, 0.5)",
         ['@media(max-width: 600px)']: {
             fontSize: '30px',
         },
@@ -35,7 +37,9 @@ const useStyles = makeStyles()({
             textAlign: 'center',
         },
     },
-    keystoneInfo: {
+    quinielaInfo: {
+        position: "relative",
+        zIndex: 150,
         paddingLeft: '10vw',
         ['@media(max-width: 600px)']: {
             fontSize: '20px',
@@ -53,21 +57,12 @@ const useStyles = makeStyles()({
             width: '300px',
         },
     },
-    donorkitNote: {
+    quinielaNote: {
         ['@media(max-width: 600px)']: {
             fontSize: '20px',
         },
         ['@media(max-width: 1000px)']: {
             paddingRight: '5vw',
-        },
-    },
-    title: {
-        marginBottom: '5vh',
-        ['@media(max-width: 600px)']: {
-            fontSize: '30px',
-        },
-        ['@media(max-width: 1000px)']: {
-            textAlign: 'center',
         },
     },
 });
@@ -96,12 +91,12 @@ const QatarQuinielaProject = () => {
                             style={{ maxWidth: '80vw' }}
                         />
                     </Grid>
-                    <Grid item lg={6} md={6} className={classes.keystoneInfo}>
+                    <Grid item lg={6} md={6} className={classes.quinielaInfo}>
                         <Box
                             textAlign={'left'}
                             fontWeight={300}
                             fontSize={30}
-                            className={classes.donorkitNote}
+                            className={classes.quinielaNote}
                         >
                             {t('quinielaNote1')}
                         </Box>

@@ -12,8 +12,10 @@ const useStyles = makeStyles()({
         padding: "1vw",
         color: "black",
         "&:hover": {
-            background: "linear-gradient(180deg,rgb(60, 192, 239)  0%, rgb(59, 157, 239) 100%)",
-            cursor: "pointer"
+            background: "linear-gradient(141deg,rgba(79, 196, 155, 1) 0%, rgba(75, 184, 146, 1) 69%)",
+            cursor: "pointer",
+            transition: "0.1s",
+            filter: "drop-shadow(0 0 5px rgba(0, 0, 0, 0.25))"
         }
     }
 })
