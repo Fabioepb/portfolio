@@ -101,6 +101,7 @@ const BitesProject = () => {
                 alt="bites-app"
                 src="https://i.imgur.com/VMBBqZ1.png"
                 className={classes.Image}
+                loading="lazy"
                 style={{ maxWidth: '90vw' }}
               />
             </Grid>
@@ -149,6 +150,7 @@ const BitesProject = () => {
             <Grid item lg={6} md={6} xs={12} sm={12}>
               <img
                 alt="bites-app-mobile"
+                loading="lazy"
                 height={450}
                 style={{ maxWidth: '96vw', userSelect: "none", pointerEvents: "none" }}
                 src="https://i.imgur.com/r8K0r07.png"

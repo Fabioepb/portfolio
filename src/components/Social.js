@@ -45,6 +45,7 @@ const Social = () => {
             rel="noopener noreferrer"
           >
             <img
+            loading="lazy"
               src="https://cdn3.iconfinder.com/data/icons/social-media-2253/25/Group-128.png"
               alt="github-logo"
               width={100}
@@ -61,6 +62,7 @@ const Social = () => {
           >
             <img
               src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Linkedin2_svg-128.png"
+              loading="lazy"
               alt="linkedin-logo"
               width={100}
               style={{ userSelect: "none", pointerEvents: "none" }}
@@ -75,6 +77,7 @@ const Social = () => {
             rel="noopener noreferrer"
           >
             <img
+            loading="lazy"
               src="https://cdn4.iconfinder.com/data/icons/user-interface-outline-27/24/25.email_mail_envelope_interface_ui-128.png"
               alt="mail-logo"
               width={100}
@@ -90,6 +93,7 @@ const Social = () => {
             rel="noopener noreferrer"
           >
             <img
+            loading="lazy"
               src="https://cdn2.iconfinder.com/data/icons/picons-social/57/79-upwork-2-128.png"
               alt="upwork-logo"
               width={100}

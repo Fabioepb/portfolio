@@ -121,6 +121,7 @@ const circuitProject = () => {
               <img
                 alt="circuit-app"
                 style={{ maxWidth: "70vw" }}
+                loading="lazy"
                 src="https://i.imgur.com/UUIIJ9v.png"
                 className={classes.Image}
               />

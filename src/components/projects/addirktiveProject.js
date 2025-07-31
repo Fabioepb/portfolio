@@ -107,6 +107,7 @@ const AddirktiveProject = () => {
                                 style={{ maxWidth: '90vw' }}
                                 src="https://i.imgur.com/dGktLDJ.png"
                                 className={classes.Image}
+                                loading="lazy"
                             />
                         </Grid>
                         <Grid
@@ -154,6 +155,7 @@ const AddirktiveProject = () => {
                         <Grid item lg={6} md={6} xs={12} sm={12}>
                             <img
                                 alt="addirktive-app-mobile"
+                                loading="lazy"
                                 height={300}
                                 style={{ maxWidth: '100%' }}
 

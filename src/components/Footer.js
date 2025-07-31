@@ -52,9 +52,9 @@ const Footer = () => {
             className={classes.footerText}
           >
             {t("footerText1")}
-            <img alt="heart-icon" src="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678087-heart-48.png" width={25} height={20} className={classes.iconBase} />
+            <img loading="lazy" alt="heart-icon" src="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678087-heart-48.png" width={25} height={20} className={classes.iconBase} />
             &
-            <img alt="coffee-icon" src="https://cdn2.iconfinder.com/data/icons/thirstee/128/coffee-coffee_cup-cappuccino-latte_art-drink-48.png" width={28} height={"auto"} className={classes.iconBase} />
+            <img loading="lazy" alt="coffee-icon" src="https://cdn2.iconfinder.com/data/icons/thirstee/128/coffee-coffee_cup-cappuccino-latte_art-drink-48.png" width={28} height={"auto"} className={classes.iconBase} />
             {t("footerText2")}
           </Box>
         </Grid>

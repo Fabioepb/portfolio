@@ -23,7 +23,7 @@ const useStyles = makeStyles()({
 const DotsCircleSVG = () => {
   const { classes } = useStyles();
   return (
-    <img src={dotsCircleImage} alt="Dots Circle" className={classes.cornerDots} />
+    <img loading="lazy" src={dotsCircleImage} alt="Dots Circle" className={classes.cornerDots} />
   );
 };
 

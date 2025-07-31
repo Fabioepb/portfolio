@@ -88,6 +88,7 @@ const QatarQuinielaProject = () => {
                     <Grid item lg={6} md={6}>
                         <img
                             alt='qatar-app'
+                            loading="lazy"
                             src='https://i.imgur.com/KcpLUzi.png'
                             className={classes.Image}
                             style={{ maxWidth: '90vw' }}

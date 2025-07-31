@@ -20,7 +20,7 @@ const useStyles = makeStyles()({
 const WavesSVG = () => {
   const { classes } = useStyles();
   return (
-    <img src={wavesImage} alt="Waves" className={classes.waves} />
+    <img loading="lazy" src={wavesImage} alt="Waves" className={classes.waves} />
   );
 };
 

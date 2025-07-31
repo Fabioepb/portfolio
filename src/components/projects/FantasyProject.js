@@ -93,6 +93,7 @@ const FantasyProject = () => {
               alt='fantasy-app'
               src='https://i.imgur.com/cxmsmdV.png'
               className={classes.Image}
+              loading="lazy"
               style={{ maxWidth: '80vw', zIndex: 150 }}
             />
           </Grid>

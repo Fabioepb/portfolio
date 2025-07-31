@@ -98,6 +98,7 @@ const DonorkitProject = () => {
           <Grid container justify="space-between" alignItems="center">
             <Grid item lg={6} md={6} xs={12} sm={12}>
               <img
+              loading="lazy"
                 alt="donorkit-app"
                 src="https://i.imgur.com/0aWTtXI.png"
                 className={classes.Image}
@@ -150,6 +151,7 @@ const DonorkitProject = () => {
               <img
                 alt="donorkit-app-mobile"
                 height={350}
+                loading="lazy"
                 style={{ maxWidth: '80vw', userSelect: "none", pointerEvents: "none" }}
                 src="https://i.imgur.com/LnYh4It.png"
               />
