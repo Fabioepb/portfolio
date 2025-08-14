@@ -16,7 +16,6 @@ const useStyles = makeStyles()({
     },
   },
   skillTitle: {
-    marginBottom: "5vh",
     backgroundImage: "linear-gradient(180deg, rgba(62,157,239,1) 0%, rgba(0,163,255,1) 45%, rgba(62,193,239,1) 100%);",
     WebkitBackgroundClip: 'text',
     WebkitTextFillColor: 'transparent',
@@ -44,7 +43,7 @@ export default function SkillSection(props) {
       <CssBaseline />
       <Grid container direction='row' justify='center' alignItems='center' className={classes.skillSection}>
         <Grid item lg={12} md={12}>
-          <Box textAlign={"center"} fontWeight={700} fontSize={42} className={classes.skillTitle} >
+          <Box component="h2" textAlign={"center"} fontWeight={700} fontSize={42} className={classes.skillTitle} >
             {t("skills")}
           </Box>
         </Grid>

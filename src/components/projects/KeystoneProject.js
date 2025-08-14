@@ -75,6 +75,7 @@ const KeystoneProject = () => {
     <section className={classes.mainContainer}>
       <Container>
         <Box
+          component="h3"
           textAlign={'center'}
           fontWeight={700}
           fontSize={46}
@@ -85,7 +86,7 @@ const KeystoneProject = () => {
         <Grid container direction='row' justify='center' alignItems='center'>
           <Grid item lg={6} md={6}>
             <img
-              alt='keystone-app'
+              alt='Keystone Real Estate - React single page application for property sales and rentals in Maracaibo by Fabio Pineda'
               src='https://i.imgur.com/ZzKQZxI.png'
               className={classes.Image}
               loading="lazy"

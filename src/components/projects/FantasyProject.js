@@ -80,6 +80,7 @@ const FantasyProject = () => {
     <section className={classes.mainContainer}>
       <Container>
         <Box
+          component="h3"
           textAlign={'center'}
           fontWeight={700}
           fontSize={46}
@@ -90,7 +91,7 @@ const FantasyProject = () => {
         <Grid container direction='row' justify='center' alignItems='center'>
           <Grid item lg={6} md={6}>
             <img
-              alt='fantasy-app'
+              alt='FMS Fantasy - Fantasy game for Urban Rooster Freestyle Master Series by Fabio Pineda'
               src='https://i.imgur.com/cxmsmdV.png'
               className={classes.Image}
               loading="lazy"

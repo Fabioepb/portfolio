@@ -149,7 +149,7 @@ const DonorkitProject = () => {
             </Grid>
             <Grid item lg={6} md={6} xs={12} sm={12}>
               <img
-                alt="donorkit-app-mobile"
+                alt="Donorkit - GoFundMe competitor for non-profit fundraising campaigns by Fabio Pineda"
                 height={350}
                 loading="lazy"
                 style={{ maxWidth: '80vw', userSelect: "none", pointerEvents: "none" }}

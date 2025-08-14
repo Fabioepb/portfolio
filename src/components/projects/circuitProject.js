@@ -108,6 +108,7 @@ const circuitProject = () => {
         </Box>
         <Grid container direction="row" justify="center" alignItems="center">
           <Box
+            component="h3"
             marginX={"auto"}
             textAlign={"center"}
             fontWeight={700}
@@ -119,7 +120,7 @@ const circuitProject = () => {
           <Grid container justify="space-between" alignItems="center">
             <Grid item lg={6} md={6} xs={12} sm={12}>
               <img
-                alt="circuit-app"
+                alt="Circuit Security - Secure platform for sweeping cryptographic assets and keyless recovery by Fabio Pineda"
                 style={{ maxWidth: "70vw" }}
                 loading="lazy"
                 src="https://i.imgur.com/UUIIJ9v.png"

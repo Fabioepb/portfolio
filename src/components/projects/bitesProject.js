@@ -149,7 +149,7 @@ const BitesProject = () => {
             </Grid>
             <Grid item lg={6} md={6} xs={12} sm={12}>
               <img
-                alt="bites-app-mobile"
+                alt="Bites - Social network mobile app for sharing favorite food spots with Google Maps integration by Fabio Pineda"
                 loading="lazy"
                 height={450}
                 style={{ maxWidth: '96vw', userSelect: "none", pointerEvents: "none" }}

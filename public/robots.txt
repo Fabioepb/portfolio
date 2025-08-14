@@ -2,17 +2,29 @@ User-agent: *
 Allow: /
 
 # Disallow sensitive or unnecessary files
-Disallow: /static/
+Disallow: /static/js/
+Disallow: /static/css/
 Disallow: /*.json$
-Disallow: /*.js$
-Disallow: /*.css$
 
-# Allow important assets
+# Allow important assets and media
 Allow: /static/*.svg
 Allow: /static/*.webp
 Allow: /static/*.png
 Allow: /static/*.jpg
 Allow: /static/*.jpeg
+Allow: /favicon.ico
+Allow: /manifest.json
+
+# Allow search engines to crawl main pages
+Allow: /#skills
+Allow: /#contact
+
+# Crawl delay (optional, helps prevent server overload)
+Crawl-delay: 1
 
 # Sitemap location
 Sitemap: https://fabiopineda.com/sitemap.xml
+
+# Additional directives for better SEO
+# Cache directive for better performance
+Cache-Control: public, max-age=31536000

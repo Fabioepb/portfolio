@@ -196,7 +196,7 @@ const Contact = () => {
             textAlign={'center'}
             fontWeight={700}
             fontSize={42}
-            component={"h1"}
+            component={"h2"}
             className={classes.projectsTitle}
           >
             {t('contactNote')}
