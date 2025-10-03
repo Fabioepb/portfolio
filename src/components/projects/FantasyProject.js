@@ -92,7 +92,7 @@ const FantasyProject = () => {
           <Grid item lg={6} md={6}>
             <img
               alt='FMS Fantasy - Fantasy game for Urban Rooster Freestyle Master Series by Fabio Pineda'
-              src='https://i.imgur.com/cxmsmdV.png'
+              src='https://i.imgur.com/Ae0O9hY.png'
               className={classes.Image}
               loading="lazy"
               style={{ maxWidth: '80vw', zIndex: 150 }}
