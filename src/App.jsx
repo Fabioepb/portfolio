@@ -62,9 +62,9 @@ function App() {
         <KeystoneProject />
       </Box>
       <Box className={classes.projectsContainer}>
-      <DotsCircleSVG />
+        <DotsCircleSVG />
 
-      <BitesProject />
+        <BitesProject />
       </Box>
       <Contact />
       <Social />

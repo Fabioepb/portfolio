@@ -18,7 +18,12 @@ const useStyles = makeStyles()({
 const CornerDotsSVG = () => {
   const { classes } = useStyles();
   return (
-    <img loading="lazy" src={cornerDotsImage} alt="Corner Dots" className={classes.cornerDots} />
+    <img
+      loading="lazy"
+      src={cornerDotsImage}
+      alt="Corner Dots"
+      className={classes.cornerDots}
+    />
   );
 };
 
