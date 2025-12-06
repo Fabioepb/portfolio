@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Fabio Pineda",
+  "name": "Fabio Pineda - Full Stack Software Engineer Portfolio",
+  "description": "Portfolio website of Fabio Pineda, a Computer Engineer and Full Stack Software Developer with expertise in React, Node.js, JavaScript, and mobile development.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,6 +11,9 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#3ea7ed",
+  "background_color": "#ffffff",
+  "categories": ["technology", "portfolio", "developer"],
+  "lang": "en",
+  "orientation": "portrait-primary"
 }
